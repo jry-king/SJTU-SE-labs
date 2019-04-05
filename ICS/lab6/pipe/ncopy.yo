@@ -1,0 +1,159 @@
+                            | # Jin Ruiyang 516030910408
+                            | # 
+                            | #/* $begin ncopy-ys */
+                            | ##################################################################
+                            | # ncopy.ys - Copy a src block of len words to dst.
+                            | # Return the number of positive words (>0) contained in src.
+                            | #
+                            | # Include your name and ID here.
+                            | #
+                            | # Describe how and why you modified the baseline code.
+                            | #
+                            | ##################################################################
+                            | # Do not modify this portion
+                            | # Function prologue.
+                            | # %rdi = src, %rsi = dst, %rdx = len
+0x000:                      | ncopy:
+                            | 
+                            | ##################################################################
+                            | # You can modify this portion
+                            | 	# Loop header
+0x000: 6300                 | 	xorq %rax,%rax		# count = 0;
+                            |     # judge length
+0x002:                      | Judge:
+0x002: c0f2f8ffffffffffffff |     iaddq $-8,%rdx      # len - 8
+0x00c: 6222                 | 	andq %rdx,%rdx		# len < 0?
+0x00e: 755700000000000000   | 	jge Loop	        # if not, start the loop
+0x017: c0f20400000000000000 |     iaddq $4,%rdx       # len - 4
+0x021: 6222                 |     andq %rdx,%rdx      # len < 0?
+0x023: 75bc01000000000000   |     jge Remain1         # deal 4 remaining elements
+0x02c:                      | Judge2:
+0x02c: c0f20200000000000000 |     iaddq $2,%rdx      # len - 2
+0x036: 6222                 |     andq %rdx,%rdx      # len < 0?
+0x038: 758702000000000000   |     jge Remain2         # deal 2 remaining elements
+0x041:                      | Judge3:
+0x041: c0f20200000000000000 |     iaddq $2,%rdx       # now len = 0 or 1
+0x04b: 6222                 |     andq %rdx,%rdx      # len = 1?
+0x04d: 760003000000000000   |     jg Remain3          # deal with the last element 
+0x056: 90                   |     ret
+                            | # len >= 8
+0x057:                      | Loop:	
+                            |     # read value from src and store it to dst
+0x057: 50870000000000000000 |     mrmovq (%rdi),%r8
+0x061: 50970800000000000000 |     mrmovq 8(%rdi),%r9
+0x06b: 50a71000000000000000 |     mrmovq 16(%rdi),%r10
+0x075: 50b71800000000000000 |     mrmovq 24(%rdi),%r11
+0x07f: 50c72000000000000000 |     mrmovq 32(%rdi),%r12
+0x089: 50d72800000000000000 |     mrmovq 40(%rdi),%r13
+0x093: 50e73000000000000000 |     mrmovq 48(%rdi),%r14
+0x09d: 50173800000000000000 |     mrmovq 56(%rdi),%rcx
+0x0a7: 40860000000000000000 |     rmmovq %r8,(%rsi)
+0x0b1: 40960800000000000000 |     rmmovq %r9,8(%rsi)
+0x0bb: 40a61000000000000000 |     rmmovq %r10,16(%rsi)
+0x0c5: 40b61800000000000000 |     rmmovq %r11,24(%rsi)
+0x0cf: 40c62000000000000000 |     rmmovq %r12,32(%rsi)
+0x0d9: 40d62800000000000000 |     rmmovq %r13,40(%rsi)
+0x0e3: 40e63000000000000000 |     rmmovq %r14,48(%rsi)
+0x0ed: 40163800000000000000 |     rmmovq %rcx,56(%rsi)
+                            |     # count positive integer
+0x0f7: 6288                 | 	andq %r8, %r8		# val <= 0?
+0x0f9: 710c01000000000000   | 	jle Npos1		# if so, goto Npos1:
+0x102: c0f00100000000000000 | 	iaddq $1, %rax		# count++
+0x10c:                      | Npos1:
+0x10c: 6299                 |     andq %r9, %r9
+0x10e: 712101000000000000   |     jle Npos2
+0x117: c0f00100000000000000 |     iaddq $1,%rax
+0x121:                      | Npos2:
+0x121: 62aa                 |     andq %r10, %r10
+0x123: 713601000000000000   |     jle Npos3
+0x12c: c0f00100000000000000 |     iaddq $1, %rax
+0x136:                      | Npos3:
+0x136: 62bb                 |     andq %r11, %r11
+0x138: 714b01000000000000   |     jle Npos4
+0x141: c0f00100000000000000 |     iaddq $1, %rax
+0x14b:                      | Npos4:
+0x14b: 62cc                 |     andq %r12, %r12
+0x14d: 716001000000000000   |     jle Npos5
+0x156: c0f00100000000000000 |     iaddq $1, %rax
+0x160:                      | Npos5:
+0x160: 62dd                 |     andq %r13, %r13
+0x162: 717501000000000000   |     jle Npos6
+0x16b: c0f00100000000000000 |     iaddq $1, %rax
+0x175:                      | Npos6:
+0x175: 62ee                 |     andq %r14, %r14
+0x177: 718a01000000000000   |     jle Npos7
+0x180: c0f00100000000000000 |     iaddq $1, %rax
+0x18a:                      | Npos7:
+0x18a: 6211                 |     andq %rcx, %rcx
+0x18c: 719f01000000000000   |     jle Npos 
+0x195: c0f00100000000000000 |     iaddq $1, %rax
+0x19f:                      | Npos:
+0x19f: c0f74000000000000000 | 	iaddq $64, %rdi		# src++
+0x1a9: c0f64000000000000000 | 	iaddq $64, %rsi		# dst++
+0x1b3: 700200000000000000   | 	jmp Judge
+                            | # 4 <= len < 8
+0x1bc:                      | Remain1:
+0x1bc: 50870000000000000000 |     mrmovq (%rdi),%r8
+0x1c6: 50970800000000000000 |     mrmovq 8(%rdi),%r9
+0x1d0: 50a71000000000000000 |     mrmovq 16(%rdi),%r10
+0x1da: 50b71800000000000000 |     mrmovq 24(%rdi),%r11
+0x1e4: 40860000000000000000 |     rmmovq %r8,(%rsi)
+0x1ee: 40960800000000000000 |     rmmovq %r9,8(%rsi)
+0x1f8: 40a61000000000000000 |     rmmovq %r10,16(%rsi)
+0x202: 40b61800000000000000 |     rmmovq %r11,24(%rsi)
+0x20c: 6288                 |     andq %r8,%r8
+0x20e: 712102000000000000   |     jle Npos10
+0x217: c0f00100000000000000 |     iaddq $1,%rax
+0x221:                      | Npos10:
+0x221: 6299                 |     andq %r9,%r9
+0x223: 713602000000000000   |     jle Npos11
+0x22c: c0f00100000000000000 |     iaddq $1,%rax
+0x236:                      | Npos11:
+0x236: 62aa                 |     andq %r10,%r10
+0x238: 714b02000000000000   |     jle Npos12
+0x241: c0f00100000000000000 |     iaddq $1,%rax
+0x24b:                      | Npos12:
+0x24b: 62bb                 |     andq %r11,%r11
+0x24d: 716002000000000000   |     jle Npos13
+0x256: c0f00100000000000000 |     iaddq $1,%rax
+0x260:                      | Npos13:
+0x260: c0f72000000000000000 |     iaddq $32, %rdi
+0x26a: c0f62000000000000000 |     iaddq $32, %rsi
+0x274: c0f2fcffffffffffffff |     iaddq $-4,%rdx      # len - 4, so after jumping to Judge2 we can add 2 to len to create len - 2
+0x27e: 702c00000000000000   |     jmp Judge2
+                            | # 2 <= len < 4
+0x287:                      | Remain2:
+0x287: 50870000000000000000 |     mrmovq (%rdi),%r8
+0x291: 50970800000000000000 |     mrmovq 8(%rdi),%r9
+0x29b: 40860000000000000000 |     rmmovq %r8,(%rsi)
+0x2a5: 40960800000000000000 |     rmmovq %r9,8(%rsi)
+0x2af: 6288                 |     andq %r8,%r8
+0x2b1: 71c402000000000000   |     jle Npos20
+0x2ba: c0f00100000000000000 |     iaddq $1,%rax
+0x2c4:                      | Npos20:
+0x2c4: 6299                 |     andq %r9,%r9
+0x2c6: 71d902000000000000   |     jle Npos21
+0x2cf: c0f00100000000000000 |     iaddq $1,%rax
+0x2d9:                      | Npos21:
+0x2d9: c0f71000000000000000 |     iaddq $16, %rdi
+0x2e3: c0f61000000000000000 |     iaddq $16, %rsi
+0x2ed: c0f2feffffffffffffff |     iaddq $-2, %rdx     # len - 2, so after jumping to Judge3 we can add 2 to len to restore it
+0x2f7: 704100000000000000   |     jmp Judge3
+                            | # len = 1
+0x300:                      | Remain3:
+0x300: 50870000000000000000 |     mrmovq (%rdi),%r8
+0x30a: 6288                 |     andq %r8,%r8
+0x30c: 40860000000000000000 |     rmmovq %r8,(%rsi)
+0x316: 712903000000000000   |     jle Npos30
+0x31f: c0f00100000000000000 |     iaddq $1,%rax
+0x329:                      | Npos30:
+0x329: 90                   |     ret
+                            | ##################################################################
+                            | # Do not modify the following section of code
+                            | # Function epilogue.
+0x32a:                      | Done:
+0x32a: 90                   | 	ret
+                            | ##################################################################
+                            | # Keep the following label at the end of your function
+0x32b:                      | End:
+                            | #/* $end ncopy-ys */

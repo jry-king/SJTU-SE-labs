@@ -1,0 +1,108 @@
+/*
+ * BUG#0
+ * description: 
+     miss semicolon
+ * location: 
+ *   int a = 10  (line 18)
+ * evidence: 
+ *   test.c:19: error: two or more data types in declaration specifiers
+ */
+
+BUG#1
+description:
+  miss semicolon
+location:
+  enum { buf_size = buf_nrec * 100 } (line 52)
+evidence:
+  gen_sort.c:54:9: error: expected ‘;’, identifier or ‘(’ before ‘struct’
+  typedef struct record {
+
+
+BUG#2
+description:
+  miss semicolon
+location:
+  } record_t (line 58)
+evidence:
+  gen_sort.c:60:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘static’
+  static long cur_rec = 0;
+
+
+BUG#3
+description:
+  wrong typename
+location:
+  gen_rec(record *rec) (line 114)
+evidence:
+  gen_sort.c:114:9: error: unknown type name ‘record’
+  gen_rec(record *rec)
+
+
+BUG#4
+description:
+  miss header file
+location:
+  #include <stdlib.h> (line 41)
+evidence:
+  gen_sort.c:187:2: error: unknown type name ‘FILE’
+  FILE *file = fopen(fn, "r");
+
+
+BUG#5
+description:
+  miss curly bracket
+location:
+  if (!file) (line 189)
+evidence:
+  gen_sort.c:195:2: error: expected identifier or ‘(’ before ‘while’
+  while (cur_rec < rec_max) {
+
+
+BUG#6
+description:
+  wrong spelling
+location:
+  for (j = 0; j < 10; i++ ){ (line 125)
+evidence:
+  for (j = 0; j < 10; i++ ){
+  found it by looking through the code
+
+
+
+BUG#7
+description:
+  one more time of iteration
+location:
+  for (cnt = 0; (cnt <= buf_nrec) (line 145)
+evidence:
+  for (cnt = 0; (cnt <= buf_nrec)
+
+
+
+BUG#8
+description:
+
+location:
+
+evidence:
+
+
+
+
+BUG#9
+description:
+
+location:
+
+evidence:
+
+
+
+
+BUG#10
+description:
+
+location:
+
+evidence:
+

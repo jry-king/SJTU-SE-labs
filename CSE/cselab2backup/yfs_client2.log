@@ -1,0 +1,4511 @@
+FUSE library version: 2.9.4
+unique: 1, opcode: INIT (26), nodeid: 0, insize: 56, pid: 0
+INIT: 7.26
+flags=0x001ffffb
+max_readahead=0x00020000
+   INIT: 7.19
+   flags=0x00000000
+   max_readahead=0x00020000
+   max_write=0x00020000
+   max_background=0
+   congestion_threshold=0
+   unique: 1, success, outsize: 40
+unique: 2, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1070
+In lookup: searching file named hostsunder inode No.1
+isfile: 252 is not a file
+getattr 00000000000000fc 0
+isfile: 252 is not a file
+isdir: 252 is not a dir
+getsymlink 00000000000000fc
+   getattr -> 10
+   unique: 2, success, outsize: 144
+unique: 3, opcode: GETATTR (3), nodeid: 252, insize: 56, pid: 1070
+isfile: 252 is not a file
+getattr 00000000000000fc 0
+isfile: 252 is not a file
+isdir: 252 is not a dir
+getsymlink 00000000000000fc
+   getattr -> 10
+   unique: 3, success, outsize: 120
+unique: 4, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1070
+In lookup: searching file named hostsunder inode No.1
+isfile: 252 is not a file
+getattr 00000000000000fc 0
+isfile: 252 is not a file
+isdir: 252 is not a dir
+getsymlink 00000000000000fc
+   getattr -> 10
+   unique: 4, success, outsize: 144
+unique: 5, opcode: UNLINK (10), nodeid: 1, insize: 46, pid: 1070
+   unique: 5, success, outsize: 16
+unique: 6, opcode: LOOKUP (1), nodeid: 1, insize: 54, pid: 1070
+In lookup: searching file named testhostslinkunder inode No.1
+isfile: 254 is not a file
+getattr 00000000000000fe 0
+isfile: 254 is not a file
+isdir: 254 is not a dir
+getsymlink 00000000000000fe
+   getattr -> 10
+   unique: 6, success, outsize: 144
+unique: 7, opcode: FORGET (2), nodeid: 252, insize: 48, pid: 0
+unique: 8, opcode: GETATTR (3), nodeid: 254, insize: 56, pid: 1070
+isfile: 254 is not a file
+getattr 00000000000000fe 0
+isfile: 254 is not a file
+isdir: 254 is not a dir
+getsymlink 00000000000000fe
+   getattr -> 10
+   unique: 8, success, outsize: 120
+unique: 9, opcode: LOOKUP (1), nodeid: 1, insize: 54, pid: 1070
+In lookup: searching file named testhostslinkunder inode No.1
+isfile: 254 is not a file
+getattr 00000000000000fe 0
+isfile: 254 is not a file
+isdir: 254 is not a dir
+getsymlink 00000000000000fe
+   getattr -> 10
+   unique: 9, success, outsize: 144
+unique: 10, opcode: UNLINK (10), nodeid: 1, insize: 54, pid: 1070
+   unique: 10, success, outsize: 16
+unique: 11, opcode: LOOKUP (1), nodeid: 1, insize: 51, pid: 1070
+In lookup: searching file named hosts_copyunder inode No.1
+isfile: 253 is a file
+getattr 00000000000000fd 1
+isfile: 253 is a file
+getfile 00000000000000fd
+getfile 00000000000000fd -> sz 0
+   getattr -> 0
+   unique: 11, success, outsize: 144
+unique: 12, opcode: FORGET (2), nodeid: 254, insize: 48, pid: 0
+unique: 13, opcode: GETATTR (3), nodeid: 253, insize: 56, pid: 1070
+isfile: 253 is a file
+getattr 00000000000000fd 1
+isfile: 253 is a file
+getfile 00000000000000fd
+getfile 00000000000000fd -> sz 0
+   getattr -> 0
+   unique: 13, success, outsize: 120
+unique: 14, opcode: LOOKUP (1), nodeid: 1, insize: 51, pid: 1070
+In lookup: searching file named hosts_copyunder inode No.1
+isfile: 253 is a file
+getattr 00000000000000fd 1
+isfile: 253 is a file
+getfile 00000000000000fd
+getfile 00000000000000fd -> sz 0
+   getattr -> 0
+   unique: 14, success, outsize: 144
+unique: 15, opcode: UNLINK (10), nodeid: 1, insize: 51, pid: 1070
+   unique: 15, success, outsize: 16
+unique: 16, opcode: LOOKUP (1), nodeid: 1, insize: 52, pid: 1070
+In lookup: searching file named hosts_copy2under inode No.1
+In lookup: lookup failed!
+   unique: 16, error: -2 (No such file or directory), outsize: 16
+unique: 17, opcode: FORGET (2), nodeid: 253, insize: 48, pid: 0
+unique: 18, opcode: LOOKUP (1), nodeid: 1, insize: 52, pid: 1070
+In lookup: searching file named hosts_copy2under inode No.1
+In lookup: lookup failed!
+   unique: 18, error: -2 (No such file or directory), outsize: 16
+unique: 19, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1071
+In lookup: searching file named hostsunder inode No.1
+In lookup: lookup failed!
+   unique: 19, error: -2 (No such file or directory), outsize: 16
+unique: 20, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1071
+In lookup: searching file named hostsunder inode No.1
+In lookup: lookup failed!
+   unique: 20, error: -2 (No such file or directory), outsize: 16
+unique: 21, opcode: SYMLINK (6), nodeid: 1, insize: 57, pid: 1071
+In lookup: searching file named hostsunder inode No.1
+In lookup: lookup failed!
+isfile: 252 is not a file
+getattr 00000000000000fc 0
+isfile: 252 is not a file
+isdir: 252 is not a dir
+getsymlink 00000000000000fc
+   getattr -> 10
+   unique: 21, success, outsize: 144
+unique: 22, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1072
+In lookup: searching file named hostsunder inode No.1
+isfile: 252 is not a file
+getattr 00000000000000fc 0
+isfile: 252 is not a file
+isdir: 252 is not a dir
+getsymlink 00000000000000fc
+   getattr -> 10
+   unique: 22, success, outsize: 144
+unique: 23, opcode: READLINK (5), nodeid: 252, insize: 40, pid: 1072
+   unique: 23, success, outsize: 26
+unique: 24, opcode: LOOKUP (1), nodeid: 1, insize: 51, pid: 1073
+In lookup: searching file named hosts_copyunder inode No.1
+In lookup: lookup failed!
+   unique: 24, error: -2 (No such file or directory), outsize: 16
+unique: 25, opcode: LOOKUP (1), nodeid: 1, insize: 51, pid: 1073
+In lookup: searching file named hosts_copyunder inode No.1
+In lookup: lookup failed!
+   unique: 25, error: -2 (No such file or directory), outsize: 16
+unique: 26, opcode: LOOKUP (1), nodeid: 1, insize: 51, pid: 1073
+In lookup: searching file named hosts_copyunder inode No.1
+In lookup: lookup failed!
+   unique: 26, error: -2 (No such file or directory), outsize: 16
+unique: 27, opcode: CREATE (35), nodeid: 1, insize: 67, pid: 1073
+In create: creating file named hosts_copyunder inode No.1
+In lookup: searching file named hosts_copyunder inode No.1
+In lookup: lookup failed!
+In create: file named hosts_copycreated with inode No.253
+isfile: 253 is a file
+getattr 00000000000000fd 1
+isfile: 253 is a file
+getfile 00000000000000fd
+getfile 00000000000000fd -> sz 0
+   getattr -> 0
+   unique: 27, success, outsize: 160
+OK: create returns.
+unique: 28, opcode: GETATTR (3), nodeid: 253, insize: 56, pid: 1073
+isfile: 253 is a file
+getattr 00000000000000fd 1
+isfile: 253 is a file
+getfile 00000000000000fd
+getfile 00000000000000fd -> sz 0
+   getattr -> 0
+   unique: 28, success, outsize: 120
+unique: 29, opcode: GETXATTR (22), nodeid: 253, insize: 68, pid: 1073
+   unique: 29, error: -38 (Function not implemented), outsize: 16
+unique: 30, opcode: WRITE (16), nodeid: 253, insize: 254, pid: 1073
+   unique: 30, success, outsize: 24
+unique: 31, opcode: FLUSH (25), nodeid: 253, insize: 64, pid: 1073
+   unique: 31, error: -38 (Function not implemented), outsize: 16
+unique: 32, opcode: RELEASE (18), nodeid: 253, insize: 64, pid: 0
+   unique: 32, success, outsize: 16
+unique: 33, opcode: LOOKUP (1), nodeid: 1, insize: 54, pid: 1074
+In lookup: searching file named testhostslinkunder inode No.1
+In lookup: lookup failed!
+   unique: 33, error: -2 (No such file or directory), outsize: 16
+unique: 34, opcode: LOOKUP (1), nodeid: 1, insize: 54, pid: 1074
+In lookup: searching file named testhostslinkunder inode No.1
+In lookup: lookup failed!
+   unique: 34, error: -2 (No such file or directory), outsize: 16
+unique: 35, opcode: SYMLINK (6), nodeid: 1, insize: 65, pid: 1074
+In lookup: searching file named testhostslinkunder inode No.1
+In lookup: lookup failed!
+isfile: 254 is not a file
+getattr 00000000000000fe 0
+isfile: 254 is not a file
+isdir: 254 is not a dir
+getsymlink 00000000000000fe
+   getattr -> 10
+   unique: 35, success, outsize: 144
+unique: 36, opcode: LOOKUP (1), nodeid: 1, insize: 54, pid: 1075
+In lookup: searching file named testhostslinkunder inode No.1
+isfile: 254 is not a file
+getattr 00000000000000fe 0
+isfile: 254 is not a file
+isdir: 254 is not a dir
+getsymlink 00000000000000fe
+   getattr -> 10
+   unique: 36, success, outsize: 144
+unique: 37, opcode: READLINK (5), nodeid: 254, insize: 40, pid: 1075
+   unique: 37, success, outsize: 26
+unique: 38, opcode: LOOKUP (1), nodeid: 1, insize: 51, pid: 1075
+In lookup: searching file named hosts_copyunder inode No.1
+isfile: 253 is a file
+getattr 00000000000000fd 1
+isfile: 253 is a file
+getfile 00000000000000fd
+getfile 00000000000000fd -> sz 174
+   getattr -> 174
+   unique: 38, success, outsize: 144
+unique: 39, opcode: GETATTR (3), nodeid: 253, insize: 56, pid: 1075
+isfile: 253 is a file
+getattr 00000000000000fd 1
+isfile: 253 is a file
+getfile 00000000000000fd
+getfile 00000000000000fd -> sz 174
+   getattr -> 174
+   unique: 39, success, outsize: 120
+unique: 40, opcode: LOOKUP (1), nodeid: 1, insize: 51, pid: 1075
+In lookup: searching file named hosts_copyunder inode No.1
+isfile: 253 is a file
+getattr 00000000000000fd 1
+isfile: 253 is a file
+getfile 00000000000000fd
+getfile 00000000000000fd -> sz 174
+   getattr -> 174
+   unique: 40, success, outsize: 144
+unique: 41, opcode: GETATTR (3), nodeid: 253, insize: 56, pid: 1075
+isfile: 253 is a file
+getattr 00000000000000fd 1
+isfile: 253 is a file
+getfile 00000000000000fd
+getfile 00000000000000fd -> sz 174
+   getattr -> 174
+   unique: 41, success, outsize: 120
+unique: 42, opcode: LOOKUP (1), nodeid: 1, insize: 51, pid: 1076
+In lookup: searching file named hosts_copyunder inode No.1
+isfile: 253 is a file
+getattr 00000000000000fd 1
+isfile: 253 is a file
+getfile 00000000000000fd
+getfile 00000000000000fd -> sz 174
+   getattr -> 174
+   unique: 42, success, outsize: 144
+unique: 43, opcode: GETATTR (3), nodeid: 253, insize: 56, pid: 1076
+isfile: 253 is a file
+getattr 00000000000000fd 1
+isfile: 253 is a file
+getfile 00000000000000fd
+getfile 00000000000000fd -> sz 174
+   getattr -> 174
+   unique: 43, success, outsize: 120
+unique: 44, opcode: LOOKUP (1), nodeid: 1, insize: 51, pid: 1076
+In lookup: searching file named hosts_copyunder inode No.1
+isfile: 253 is a file
+getattr 00000000000000fd 1
+isfile: 253 is a file
+getfile 00000000000000fd
+getfile 00000000000000fd -> sz 174
+   getattr -> 174
+   unique: 44, success, outsize: 144
+unique: 45, opcode: UNLINK (10), nodeid: 1, insize: 51, pid: 1076
+   unique: 45, success, outsize: 16
+unique: 46, opcode: FORGET (2), nodeid: 253, insize: 48, pid: 0
+unique: 47, opcode: LOOKUP (1), nodeid: 1, insize: 51, pid: 1077
+In lookup: searching file named hosts_copyunder inode No.1
+In lookup: lookup failed!
+   unique: 47, error: -2 (No such file or directory), outsize: 16
+unique: 48, opcode: CREATE (35), nodeid: 1, insize: 67, pid: 1077
+In create: creating file named hosts_copyunder inode No.1
+In lookup: searching file named hosts_copyunder inode No.1
+In lookup: lookup failed!
+In create: file named hosts_copycreated with inode No.253
+isfile: 253 is a file
+getattr 00000000000000fd 1
+isfile: 253 is a file
+getfile 00000000000000fd
+getfile 00000000000000fd -> sz 0
+   getattr -> 0
+   unique: 48, success, outsize: 160
+OK: create returns.
+unique: 49, opcode: SETATTR (4), nodeid: 253, insize: 128, pid: 1077
+fuseserver_setattr 0x1b0
+   unique: 49, error: -38 (Function not implemented), outsize: 16
+unique: 50, opcode: SETATTR (4), nodeid: 253, insize: 128, pid: 1077
+fuseserver_setattr 0x1b0
+   unique: 50, error: -38 (Function not implemented), outsize: 16
+unique: 51, opcode: LOOKUP (1), nodeid: 1, insize: 51, pid: 1077
+In lookup: searching file named hosts_copyunder inode No.1
+isfile: 253 is a file
+getattr 00000000000000fd 1
+isfile: 253 is a file
+getfile 00000000000000fd
+getfile 00000000000000fd -> sz 0
+   getattr -> 0
+   unique: 51, success, outsize: 144
+unique: 52, opcode: SETATTR (4), nodeid: 253, insize: 128, pid: 1077
+fuseserver_setattr 0x1b0
+   unique: 52, error: -38 (Function not implemented), outsize: 16
+unique: 53, opcode: LOOKUP (1), nodeid: 1, insize: 51, pid: 1077
+In lookup: searching file named hosts_copyunder inode No.1
+isfile: 253 is a file
+getattr 00000000000000fd 1
+isfile: 253 is a file
+getfile 00000000000000fd
+getfile 00000000000000fd -> sz 0
+   getattr -> 0
+   unique: 53, success, outsize: 144
+unique: 54, opcode: SETATTR (4), nodeid: 253, insize: 128, pid: 1077
+fuseserver_setattr 0x1b0
+   unique: 54, error: -38 (Function not implemented), outsize: 16
+unique: 55, opcode: RELEASE (18), nodeid: 253, insize: 64, pid: 0
+   unique: 55, success, outsize: 16
+unique: 56, opcode: LOOKUP (1), nodeid: 1, insize: 54, pid: 1078
+In lookup: searching file named testhostslinkunder inode No.1
+isfile: 254 is not a file
+getattr 00000000000000fe 0
+isfile: 254 is not a file
+isdir: 254 is not a dir
+getsymlink 00000000000000fe
+   getattr -> 10
+   unique: 56, success, outsize: 144
+unique: 57, opcode: READLINK (5), nodeid: 254, insize: 40, pid: 1078
+   unique: 57, success, outsize: 26
+unique: 58, opcode: LOOKUP (1), nodeid: 1, insize: 51, pid: 1078
+In lookup: searching file named hosts_copyunder inode No.1
+isfile: 253 is a file
+getattr 00000000000000fd 1
+isfile: 253 is a file
+getfile 00000000000000fd
+getfile 00000000000000fd -> sz 0
+   getattr -> 0
+   unique: 58, success, outsize: 144
+unique: 59, opcode: GETATTR (3), nodeid: 253, insize: 56, pid: 1078
+isfile: 253 is a file
+getattr 00000000000000fd 1
+isfile: 253 is a file
+getfile 00000000000000fd
+getfile 00000000000000fd -> sz 0
+   getattr -> 0
+   unique: 59, success, outsize: 120
+unique: 60, opcode: LOOKUP (1), nodeid: 1, insize: 51, pid: 1078
+In lookup: searching file named hosts_copyunder inode No.1
+isfile: 253 is a file
+getattr 00000000000000fd 1
+isfile: 253 is a file
+getfile 00000000000000fd
+getfile 00000000000000fd -> sz 0
+   getattr -> 0
+   unique: 60, success, outsize: 144
+unique: 61, opcode: GETATTR (3), nodeid: 253, insize: 56, pid: 1078
+isfile: 253 is a file
+getattr 00000000000000fd 1
+isfile: 253 is a file
+getfile 00000000000000fd
+getfile 00000000000000fd -> sz 0
+   getattr -> 0
+   unique: 61, success, outsize: 120
+unique: 62, opcode: LOOKUP (1), nodeid: 1, insize: 53, pid: 1113
+In lookup: searching file named foo.txt.yfs2under inode No.1
+In lookup: lookup failed!
+   unique: 62, error: -2 (No such file or directory), outsize: 16
+unique: 63, opcode: CREATE (35), nodeid: 1, insize: 69, pid: 1113
+In create: creating file named foo.txt.yfs2under inode No.1
+In lookup: searching file named foo.txt.yfs2under inode No.1
+In lookup: lookup failed!
+In create: file named foo.txt.yfs2created with inode No.255
+isfile: 255 is a file
+getattr 00000000000000ff 1
+isfile: 255 is a file
+getfile 00000000000000ff
+getfile 00000000000000ff -> sz 0
+   getattr -> 0
+   unique: 63, success, outsize: 160
+OK: create returns.
+unique: 64, opcode: SETATTR (4), nodeid: 255, insize: 128, pid: 1113
+fuseserver_setattr 0x8
+   fuseserver_setattr set size to 3072
+In setattr: setting attributes on inode No.255
+isfile: 255 is a file
+getattr 00000000000000ff 1
+isfile: 255 is a file
+getfile 00000000000000ff
+getfile 00000000000000ff -> sz 3072
+   getattr -> 3072
+   unique: 64, success, outsize: 120
+unique: 65, opcode: IOCTL (39), nodeid: 255, insize: 72, pid: 1113
+   unique: 65, error: -38 (Function not implemented), outsize: 16
+unique: 66, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 66, success, outsize: 24
+unique: 67, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 67, success, outsize: 24
+unique: 68, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 68, success, outsize: 24
+unique: 69, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 69, success, outsize: 24
+unique: 70, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 70, success, outsize: 24
+unique: 71, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 71, success, outsize: 24
+unique: 72, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 72, success, outsize: 24
+unique: 73, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 73, success, outsize: 24
+unique: 74, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 74, success, outsize: 24
+unique: 75, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 75, success, outsize: 24
+unique: 76, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 76, success, outsize: 24
+unique: 77, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 77, success, outsize: 24
+unique: 78, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 78, success, outsize: 24
+unique: 79, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 79, success, outsize: 24
+unique: 80, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 80, success, outsize: 24
+unique: 81, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 81, success, outsize: 24
+unique: 82, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 82, success, outsize: 24
+unique: 83, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 83, success, outsize: 24
+unique: 84, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 84, success, outsize: 24
+unique: 85, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 85, success, outsize: 24
+unique: 86, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 86, success, outsize: 24
+unique: 87, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 87, success, outsize: 24
+unique: 88, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 88, success, outsize: 24
+unique: 89, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 89, success, outsize: 24
+unique: 90, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 90, success, outsize: 24
+unique: 91, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 91, success, outsize: 24
+unique: 92, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 92, success, outsize: 24
+unique: 93, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 93, success, outsize: 24
+unique: 94, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 94, success, outsize: 24
+unique: 95, opcode: WRITE (16), nodeid: 255, insize: 1104, pid: 1113
+   unique: 95, success, outsize: 24
+unique: 96, opcode: RELEASE (18), nodeid: 255, insize: 64, pid: 0
+   unique: 96, success, outsize: 16
+unique: 97, opcode: LOOKUP (1), nodeid: 1, insize: 53, pid: 1114
+In lookup: searching file named foo.txt.yfs2under inode No.1
+isfile: 255 is a file
+getattr 00000000000000ff 1
+isfile: 255 is a file
+getfile 00000000000000ff
+getfile 00000000000000ff -> sz 33792
+   getattr -> 33792
+   unique: 97, success, outsize: 144
+unique: 98, opcode: GETATTR (3), nodeid: 255, insize: 56, pid: 1114
+isfile: 255 is a file
+getattr 00000000000000ff 1
+isfile: 255 is a file
+getfile 00000000000000ff
+getfile 00000000000000ff -> sz 33792
+   getattr -> 33792
+   unique: 98, success, outsize: 120
+unique: 99, opcode: LOOKUP (1), nodeid: 1, insize: 53, pid: 1114
+In lookup: searching file named foo.txt.yfs2under inode No.1
+isfile: 255 is a file
+getattr 00000000000000ff 1
+isfile: 255 is a file
+getfile 00000000000000ff
+getfile 00000000000000ff -> sz 33792
+   getattr -> 33792
+   unique: 99, success, outsize: 144
+unique: 100, opcode: OPEN (14), nodeid: 255, insize: 48, pid: 1114
+   unique: 100, success, outsize: 32
+unique: 101, opcode: READ (15), nodeid: 255, insize: 80, pid: 1114
+   unique: 101, success, outsize: 16400
+unique: 102, opcode: READ (15), nodeid: 255, insize: 80, pid: 1114
+   unique: 102, success, outsize: 17424
+unique: 103, opcode: GETATTR (3), nodeid: 255, insize: 56, pid: 1114
+isfile: 255 is a file
+getattr 00000000000000ff 1
+isfile: 255 is a file
+getfile 00000000000000ff
+getfile 00000000000000ff -> sz 33792
+   getattr -> 33792
+   unique: 103, success, outsize: 120
+unique: 104, opcode: GETATTR (3), nodeid: 255, insize: 56, pid: 1114
+isfile: 255 is a file
+getattr 00000000000000ff 1
+isfile: 255 is a file
+getfile 00000000000000ff
+getfile 00000000000000ff -> sz 33792
+   getattr -> 33792
+   unique: 104, success, outsize: 120
+unique: 105, opcode: RELEASE (18), nodeid: 255, insize: 64, pid: 0
+   unique: 105, success, outsize: 16
+unique: 106, opcode: LOOKUP (1), nodeid: 1, insize: 53, pid: 1115
+In lookup: searching file named foo.txt.yfs2under inode No.1
+isfile: 255 is a file
+getattr 00000000000000ff 1
+isfile: 255 is a file
+getfile 00000000000000ff
+getfile 00000000000000ff -> sz 33792
+   getattr -> 33792
+   unique: 106, success, outsize: 144
+unique: 107, opcode: GETATTR (3), nodeid: 255, insize: 56, pid: 1115
+isfile: 255 is a file
+getattr 00000000000000ff 1
+isfile: 255 is a file
+getfile 00000000000000ff
+getfile 00000000000000ff -> sz 33792
+   getattr -> 33792
+   unique: 107, success, outsize: 120
+unique: 108, opcode: LOOKUP (1), nodeid: 1, insize: 53, pid: 1115
+In lookup: searching file named foo.txt.yfs2under inode No.1
+isfile: 255 is a file
+getattr 00000000000000ff 1
+isfile: 255 is a file
+getfile 00000000000000ff
+getfile 00000000000000ff -> sz 33792
+   getattr -> 33792
+   unique: 108, success, outsize: 144
+unique: 109, opcode: UNLINK (10), nodeid: 1, insize: 53, pid: 1115
+   unique: 109, success, outsize: 16
+unique: 110, opcode: FORGET (2), nodeid: 255, insize: 48, pid: 0
+unique: 111, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611864 1542611864 1542611864
+   unique: 111, success, outsize: 144
+unique: 112, opcode: ACCESS (34), nodeid: 255, insize: 48, pid: 1133
+   unique: 112, error: -38 (Function not implemented), outsize: 16
+unique: 113, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611865 1542611865 1542611865
+   unique: 113, success, outsize: 144
+unique: 114, opcode: LOOKUP (1), nodeid: 255, insize: 43, pid: 1133
+In lookup: searching file named f1under inode No.255
+isfile: 256 is a file
+getattr 0000000000000100 1
+isfile: 256 is a file
+getfile 0000000000000100
+getfile 0000000000000100 -> sz 3
+   getattr -> 3
+   unique: 114, success, outsize: 144
+unique: 115, opcode: OPEN (14), nodeid: 256, insize: 48, pid: 1133
+   unique: 115, success, outsize: 32
+unique: 116, opcode: GETATTR (3), nodeid: 256, insize: 56, pid: 1133
+isfile: 256 is a file
+getattr 0000000000000100 1
+isfile: 256 is a file
+getfile 0000000000000100
+getfile 0000000000000100 -> sz 3
+   getattr -> 3
+   unique: 116, success, outsize: 120
+unique: 117, opcode: READ (15), nodeid: 256, insize: 80, pid: 1133
+   unique: 117, success, outsize: 19
+unique: 118, opcode: RELEASE (18), nodeid: 256, insize: 64, pid: 0
+   unique: 118, success, outsize: 16
+unique: 119, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611865 1542611865 1542611865
+   unique: 119, success, outsize: 144
+unique: 120, opcode: LOOKUP (1), nodeid: 255, insize: 43, pid: 1133
+In lookup: searching file named f1under inode No.255
+isfile: 256 is a file
+getattr 0000000000000100 1
+isfile: 256 is a file
+getfile 0000000000000100
+getfile 0000000000000100 -> sz 3
+   getattr -> 3
+   unique: 120, success, outsize: 144
+unique: 121, opcode: UNLINK (10), nodeid: 255, insize: 43, pid: 1133
+   unique: 121, success, outsize: 16
+unique: 122, opcode: FORGET (2), nodeid: 256, insize: 48, pid: 0
+unique: 123, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611868 1542611868 1542611868
+   unique: 123, success, outsize: 144
+unique: 124, opcode: LOOKUP (1), nodeid: 255, insize: 43, pid: 1133
+In lookup: searching file named f1under inode No.255
+In lookup: lookup failed!
+   unique: 124, error: -2 (No such file or directory), outsize: 16
+unique: 125, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611869 1542611869 1542611869
+   unique: 125, success, outsize: 144
+unique: 126, opcode: LOOKUP (1), nodeid: 255, insize: 43, pid: 1133
+In lookup: searching file named f2under inode No.255
+isfile: 256 is a file
+getattr 0000000000000100 1
+isfile: 256 is a file
+getfile 0000000000000100
+getfile 0000000000000100 -> sz 3
+   getattr -> 3
+   unique: 126, success, outsize: 144
+unique: 127, opcode: UNLINK (10), nodeid: 255, insize: 43, pid: 1133
+   unique: 127, success, outsize: 16
+unique: 128, opcode: FORGET (2), nodeid: 256, insize: 48, pid: 0
+unique: 129, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611871 1542611871 1542611871
+   unique: 129, success, outsize: 144
+unique: 130, opcode: LOOKUP (1), nodeid: 255, insize: 43, pid: 1133
+In lookup: searching file named f2under inode No.255
+In lookup: lookup failed!
+   unique: 130, error: -2 (No such file or directory), outsize: 16
+unique: 131, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611872 1542611872 1542611872
+   unique: 131, success, outsize: 144
+unique: 132, opcode: LOOKUP (1), nodeid: 255, insize: 43, pid: 1133
+In lookup: searching file named f3under inode No.255
+isfile: 256 is a file
+getattr 0000000000000100 1
+isfile: 256 is a file
+getfile 0000000000000100
+getfile 0000000000000100 -> sz 3
+   getattr -> 3
+   unique: 132, success, outsize: 144
+unique: 133, opcode: OPEN (14), nodeid: 256, insize: 48, pid: 1133
+   unique: 133, success, outsize: 32
+unique: 134, opcode: GETATTR (3), nodeid: 256, insize: 56, pid: 1133
+isfile: 256 is a file
+getattr 0000000000000100 1
+isfile: 256 is a file
+getfile 0000000000000100
+getfile 0000000000000100 -> sz 3
+   getattr -> 3
+   unique: 134, success, outsize: 120
+unique: 135, opcode: READ (15), nodeid: 256, insize: 80, pid: 1133
+   unique: 135, success, outsize: 19
+unique: 136, opcode: RELEASE (18), nodeid: 256, insize: 64, pid: 0
+   unique: 136, success, outsize: 16
+unique: 137, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611873 1542611873 1542611873
+   unique: 137, success, outsize: 144
+unique: 138, opcode: LOOKUP (1), nodeid: 255, insize: 44, pid: 1133
+In lookup: searching file named fx2under inode No.255
+In lookup: lookup failed!
+   unique: 138, error: -2 (No such file or directory), outsize: 16
+unique: 139, opcode: CREATE (35), nodeid: 255, insize: 60, pid: 1133
+In create: creating file named fx2under inode No.255
+In lookup: searching file named fx2under inode No.255
+In lookup: lookup failed!
+In create: file named fx2created with inode No.256
+isfile: 256 is a file
+getattr 0000000000000100 1
+isfile: 256 is a file
+getfile 0000000000000100
+getfile 0000000000000100 -> sz 0
+   getattr -> 0
+   unique: 139, success, outsize: 160
+OK: create returns.
+unique: 140, opcode: WRITE (16), nodeid: 256, insize: 82, pid: 1133
+   unique: 140, success, outsize: 24
+unique: 141, opcode: RELEASE (18), nodeid: 256, insize: 64, pid: 0
+   unique: 141, success, outsize: 16
+unique: 142, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611874 1542611874 1542611874
+   unique: 142, success, outsize: 144
+unique: 143, opcode: LOOKUP (1), nodeid: 255, insize: 44, pid: 1133
+In lookup: searching file named fx2under inode No.255
+isfile: 256 is a file
+getattr 0000000000000100 1
+isfile: 256 is a file
+getfile 0000000000000100
+getfile 0000000000000100 -> sz 2
+   getattr -> 2
+   unique: 143, success, outsize: 144
+unique: 144, opcode: UNLINK (10), nodeid: 255, insize: 44, pid: 1133
+   unique: 144, success, outsize: 16
+unique: 145, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611875 1542611875 1542611875
+   unique: 145, success, outsize: 144
+unique: 146, opcode: LOOKUP (1), nodeid: 255, insize: 43, pid: 1133
+In lookup: searching file named f3under inode No.255
+In lookup: lookup failed!
+   unique: 146, error: -2 (No such file or directory), outsize: 16
+unique: 147, opcode: LOOKUP (1), nodeid: 255, insize: 43, pid: 1133
+In lookup: searching file named f3under inode No.255
+In lookup: lookup failed!
+   unique: 147, error: -2 (No such file or directory), outsize: 16
+unique: 148, opcode: FORGET (2), nodeid: 256, insize: 48, pid: 0
+unique: 149, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611875 1542611875 1542611875
+   unique: 149, success, outsize: 144
+unique: 150, opcode: LOOKUP (1), nodeid: 255, insize: 43, pid: 1133
+In lookup: searching file named f1under inode No.255
+In lookup: lookup failed!
+   unique: 150, error: -2 (No such file or directory), outsize: 16
+unique: 151, opcode: CREATE (35), nodeid: 255, insize: 59, pid: 1133
+In create: creating file named f1under inode No.255
+In lookup: searching file named f1under inode No.255
+In lookup: lookup failed!
+In create: file named f1created with inode No.256
+isfile: 256 is a file
+getattr 0000000000000100 1
+isfile: 256 is a file
+getfile 0000000000000100
+getfile 0000000000000100 -> sz 0
+   getattr -> 0
+   unique: 151, success, outsize: 160
+OK: create returns.
+unique: 152, opcode: WRITE (16), nodeid: 256, insize: 83, pid: 1133
+   unique: 152, success, outsize: 24
+unique: 153, opcode: RELEASE (18), nodeid: 256, insize: 64, pid: 0
+   unique: 153, success, outsize: 16
+unique: 154, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611877 1542611876 1542611877
+   unique: 154, success, outsize: 144
+unique: 155, opcode: LOOKUP (1), nodeid: 255, insize: 43, pid: 1133
+In lookup: searching file named f1under inode No.255
+isfile: 256 is a file
+getattr 0000000000000100 1
+isfile: 256 is a file
+getfile 0000000000000100
+getfile 0000000000000100 -> sz 6
+   getattr -> 6
+   unique: 155, success, outsize: 144
+unique: 156, opcode: OPEN (14), nodeid: 256, insize: 48, pid: 1133
+   unique: 156, success, outsize: 32
+unique: 157, opcode: WRITE (16), nodeid: 256, insize: 83, pid: 1133
+   unique: 157, success, outsize: 24
+unique: 158, opcode: RELEASE (18), nodeid: 256, insize: 64, pid: 0
+   unique: 158, success, outsize: 16
+unique: 159, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611878 1542611876 1542611878
+   unique: 159, success, outsize: 144
+unique: 160, opcode: LOOKUP (1), nodeid: 255, insize: 43, pid: 1133
+In lookup: searching file named f1under inode No.255
+isfile: 256 is a file
+getattr 0000000000000100 1
+isfile: 256 is a file
+getfile 0000000000000100
+getfile 0000000000000100 -> sz 9
+   getattr -> 9
+   unique: 160, success, outsize: 144
+unique: 161, opcode: OPEN (14), nodeid: 256, insize: 48, pid: 1133
+   unique: 161, success, outsize: 32
+unique: 162, opcode: GETATTR (3), nodeid: 256, insize: 56, pid: 1133
+isfile: 256 is a file
+getattr 0000000000000100 1
+isfile: 256 is a file
+getfile 0000000000000100
+getfile 0000000000000100 -> sz 9
+   getattr -> 9
+   unique: 162, success, outsize: 120
+unique: 163, opcode: READ (15), nodeid: 256, insize: 80, pid: 1133
+   unique: 163, success, outsize: 25
+unique: 164, opcode: RELEASE (18), nodeid: 256, insize: 64, pid: 0
+   unique: 164, success, outsize: 16
+unique: 165, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611878 1542611876 1542611878
+   unique: 165, success, outsize: 144
+unique: 166, opcode: OPENDIR (27), nodeid: 255, insize: 48, pid: 1133
+   unique: 166, success, outsize: 32
+unique: 167, opcode: GETATTR (3), nodeid: 255, insize: 56, pid: 1133
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611878 1542611876 1542611878
+   unique: 167, success, outsize: 120
+unique: 168, opcode: READDIR (28), nodeid: 255, insize: 80, pid: 1133
+fuseserver_readdir
+isdir: 255 is a dir
+   unique: 168, success, outsize: 48
+unique: 169, opcode: READDIR (28), nodeid: 255, insize: 80, pid: 1133
+fuseserver_readdir
+isdir: 255 is a dir
+   unique: 169, success, outsize: 16
+unique: 170, opcode: RELEASEDIR (29), nodeid: 255, insize: 64, pid: 0
+   unique: 170, success, outsize: 16
+unique: 171, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611879 1542611879 1542611879
+   unique: 171, success, outsize: 144
+unique: 172, opcode: OPENDIR (27), nodeid: 255, insize: 48, pid: 1133
+   unique: 172, success, outsize: 32
+unique: 173, opcode: GETATTR (3), nodeid: 255, insize: 56, pid: 1133
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611879 1542611879 1542611879
+   unique: 173, success, outsize: 120
+unique: 174, opcode: READDIR (28), nodeid: 255, insize: 80, pid: 1133
+fuseserver_readdir
+isdir: 255 is a dir
+   unique: 174, success, outsize: 16
+unique: 175, opcode: RELEASEDIR (29), nodeid: 255, insize: 64, pid: 0
+   unique: 175, success, outsize: 16
+unique: 176, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611879 1542611879 1542611879
+   unique: 176, success, outsize: 144
+unique: 177, opcode: LOOKUP (1), nodeid: 255, insize: 43, pid: 1133
+In lookup: searching file named f2under inode No.255
+In lookup: lookup failed!
+   unique: 177, error: -2 (No such file or directory), outsize: 16
+unique: 178, opcode: CREATE (35), nodeid: 255, insize: 59, pid: 1133
+In create: creating file named f2under inode No.255
+In lookup: searching file named f2under inode No.255
+In lookup: lookup failed!
+In create: file named f2created with inode No.256
+isfile: 256 is a file
+getattr 0000000000000100 1
+isfile: 256 is a file
+getfile 0000000000000100
+getfile 0000000000000100 -> sz 0
+   getattr -> 0
+   unique: 178, success, outsize: 160
+OK: create returns.
+unique: 179, opcode: WRITE (16), nodeid: 256, insize: 83, pid: 1133
+   unique: 179, success, outsize: 24
+unique: 180, opcode: RELEASE (18), nodeid: 256, insize: 64, pid: 0
+   unique: 180, success, outsize: 16
+unique: 181, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611881 1542611881 1542611881
+   unique: 181, success, outsize: 144
+unique: 182, opcode: OPENDIR (27), nodeid: 255, insize: 48, pid: 1133
+   unique: 182, success, outsize: 32
+unique: 183, opcode: GETATTR (3), nodeid: 255, insize: 56, pid: 1133
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611881 1542611881 1542611881
+   unique: 183, success, outsize: 120
+unique: 184, opcode: READDIR (28), nodeid: 255, insize: 80, pid: 1133
+fuseserver_readdir
+isdir: 255 is a dir
+   unique: 184, success, outsize: 80
+unique: 185, opcode: READDIR (28), nodeid: 255, insize: 80, pid: 1133
+fuseserver_readdir
+isdir: 255 is a dir
+   unique: 185, success, outsize: 16
+unique: 186, opcode: RELEASEDIR (29), nodeid: 255, insize: 64, pid: 0
+   unique: 186, success, outsize: 16
+unique: 187, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611881 1542611881 1542611881
+   unique: 187, success, outsize: 144
+unique: 188, opcode: LOOKUP (1), nodeid: 255, insize: 43, pid: 1133
+In lookup: searching file named f2under inode No.255
+isfile: 256 is a file
+getattr 0000000000000100 1
+isfile: 256 is a file
+getfile 0000000000000100
+getfile 0000000000000100 -> sz 3
+   getattr -> 3
+   unique: 188, success, outsize: 144
+unique: 189, opcode: UNLINK (10), nodeid: 255, insize: 43, pid: 1133
+   unique: 189, success, outsize: 16
+unique: 190, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611882 1542611882 1542611882
+   unique: 190, success, outsize: 144
+unique: 191, opcode: OPENDIR (27), nodeid: 255, insize: 48, pid: 1133
+   unique: 191, success, outsize: 32
+unique: 192, opcode: GETATTR (3), nodeid: 255, insize: 56, pid: 1133
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611882 1542611882 1542611882
+   unique: 192, success, outsize: 120
+unique: 193, opcode: READDIR (28), nodeid: 255, insize: 80, pid: 1133
+fuseserver_readdir
+isdir: 255 is a dir
+   unique: 193, success, outsize: 48
+unique: 194, opcode: READDIR (28), nodeid: 255, insize: 80, pid: 1133
+fuseserver_readdir
+isdir: 255 is a dir
+   unique: 194, success, outsize: 16
+unique: 195, opcode: RELEASEDIR (29), nodeid: 255, insize: 64, pid: 0
+   unique: 195, success, outsize: 16
+unique: 196, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611882 1542611882 1542611882
+   unique: 196, success, outsize: 144
+unique: 197, opcode: LOOKUP (1), nodeid: 255, insize: 43, pid: 1133
+In lookup: searching file named f3under inode No.255
+isfile: 257 is a file
+getattr 0000000000000101 1
+isfile: 257 is a file
+getfile 0000000000000101
+getfile 0000000000000101 -> sz 3
+   getattr -> 3
+   unique: 197, success, outsize: 144
+unique: 198, opcode: UNLINK (10), nodeid: 255, insize: 43, pid: 1133
+   unique: 198, success, outsize: 16
+unique: 199, opcode: FORGET (2), nodeid: 257, insize: 48, pid: 0
+unique: 200, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611883 1542611883 1542611883
+   unique: 200, success, outsize: 144
+unique: 201, opcode: OPENDIR (27), nodeid: 255, insize: 48, pid: 1133
+   unique: 201, success, outsize: 32
+unique: 202, opcode: GETATTR (3), nodeid: 255, insize: 56, pid: 1133
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611883 1542611883 1542611883
+   unique: 202, success, outsize: 120
+unique: 203, opcode: READDIR (28), nodeid: 255, insize: 80, pid: 1133
+fuseserver_readdir
+isdir: 255 is a dir
+   unique: 203, success, outsize: 16
+unique: 204, opcode: RELEASEDIR (29), nodeid: 255, insize: 64, pid: 0
+   unique: 204, success, outsize: 16
+unique: 205, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611884 1542611884 1542611884
+   unique: 205, success, outsize: 144
+unique: 206, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-0under inode No.255
+In lookup: lookup failed!
+   unique: 206, error: -2 (No such file or directory), outsize: 16
+unique: 207, opcode: CREATE (35), nodeid: 255, insize: 61, pid: 1133
+In create: creating file named bb-0under inode No.255
+In lookup: searching file named bb-0under inode No.255
+In lookup: lookup failed!
+In create: file named bb-0created with inode No.266
+isfile: 266 is a file
+getattr 000000000000010a 1
+isfile: 266 is a file
+getfile 000000000000010a
+getfile 000000000000010a -> sz 0
+   getattr -> 0
+   unique: 207, success, outsize: 160
+OK: create returns.
+unique: 208, opcode: WRITE (16), nodeid: 266, insize: 84, pid: 1133
+   unique: 208, success, outsize: 24
+unique: 209, opcode: RELEASE (18), nodeid: 266, insize: 64, pid: 0
+   unique: 209, success, outsize: 16
+unique: 210, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611885 1542611885 1542611885
+   unique: 210, success, outsize: 144
+unique: 211, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-1under inode No.255
+In lookup: lookup failed!
+   unique: 211, error: -2 (No such file or directory), outsize: 16
+unique: 212, opcode: CREATE (35), nodeid: 255, insize: 61, pid: 1133
+In create: creating file named bb-1under inode No.255
+In lookup: searching file named bb-1under inode No.255
+In lookup: lookup failed!
+In create: file named bb-1created with inode No.267
+isfile: 267 is a file
+getattr 000000000000010b 1
+isfile: 267 is a file
+getfile 000000000000010b
+getfile 000000000000010b -> sz 0
+   getattr -> 0
+   unique: 212, success, outsize: 160
+OK: create returns.
+unique: 213, opcode: WRITE (16), nodeid: 267, insize: 84, pid: 1133
+   unique: 213, success, outsize: 24
+unique: 214, opcode: RELEASE (18), nodeid: 267, insize: 64, pid: 0
+   unique: 214, success, outsize: 16
+unique: 215, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611885 1542611885 1542611885
+   unique: 215, success, outsize: 144
+unique: 216, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-2under inode No.255
+In lookup: lookup failed!
+   unique: 216, error: -2 (No such file or directory), outsize: 16
+unique: 217, opcode: CREATE (35), nodeid: 255, insize: 61, pid: 1133
+In create: creating file named bb-2under inode No.255
+In lookup: searching file named bb-2under inode No.255
+In lookup: lookup failed!
+In create: file named bb-2created with inode No.268
+isfile: 268 is a file
+getattr 000000000000010c 1
+isfile: 268 is a file
+getfile 000000000000010c
+getfile 000000000000010c -> sz 0
+   getattr -> 0
+   unique: 217, success, outsize: 160
+OK: create returns.
+unique: 218, opcode: WRITE (16), nodeid: 268, insize: 84, pid: 1133
+   unique: 218, success, outsize: 24
+unique: 219, opcode: RELEASE (18), nodeid: 268, insize: 64, pid: 0
+   unique: 219, success, outsize: 16
+unique: 220, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611885 1542611885 1542611885
+   unique: 220, success, outsize: 144
+unique: 221, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-3under inode No.255
+In lookup: lookup failed!
+   unique: 221, error: -2 (No such file or directory), outsize: 16
+unique: 222, opcode: CREATE (35), nodeid: 255, insize: 61, pid: 1133
+In create: creating file named bb-3under inode No.255
+In lookup: searching file named bb-3under inode No.255
+In lookup: lookup failed!
+In create: file named bb-3created with inode No.269
+isfile: 269 is a file
+getattr 000000000000010d 1
+isfile: 269 is a file
+getfile 000000000000010d
+getfile 000000000000010d -> sz 0
+   getattr -> 0
+   unique: 222, success, outsize: 160
+OK: create returns.
+unique: 223, opcode: WRITE (16), nodeid: 269, insize: 84, pid: 1133
+   unique: 223, success, outsize: 24
+unique: 224, opcode: RELEASE (18), nodeid: 269, insize: 64, pid: 0
+   unique: 224, success, outsize: 16
+unique: 225, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611885 1542611885 1542611885
+   unique: 225, success, outsize: 144
+unique: 226, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-4under inode No.255
+In lookup: lookup failed!
+   unique: 226, error: -2 (No such file or directory), outsize: 16
+unique: 227, opcode: CREATE (35), nodeid: 255, insize: 61, pid: 1133
+In create: creating file named bb-4under inode No.255
+In lookup: searching file named bb-4under inode No.255
+In lookup: lookup failed!
+In create: file named bb-4created with inode No.270
+isfile: 270 is a file
+getattr 000000000000010e 1
+isfile: 270 is a file
+getfile 000000000000010e
+getfile 000000000000010e -> sz 0
+   getattr -> 0
+   unique: 227, success, outsize: 160
+OK: create returns.
+unique: 228, opcode: WRITE (16), nodeid: 270, insize: 84, pid: 1133
+   unique: 228, success, outsize: 24
+unique: 229, opcode: RELEASE (18), nodeid: 270, insize: 64, pid: 0
+   unique: 229, success, outsize: 16
+unique: 230, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611885 1542611885 1542611885
+   unique: 230, success, outsize: 144
+unique: 231, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-5under inode No.255
+In lookup: lookup failed!
+   unique: 231, error: -2 (No such file or directory), outsize: 16
+unique: 232, opcode: CREATE (35), nodeid: 255, insize: 61, pid: 1133
+In create: creating file named bb-5under inode No.255
+In lookup: searching file named bb-5under inode No.255
+In lookup: lookup failed!
+In create: file named bb-5created with inode No.271
+isfile: 271 is a file
+getattr 000000000000010f 1
+isfile: 271 is a file
+getfile 000000000000010f
+getfile 000000000000010f -> sz 0
+   getattr -> 0
+   unique: 232, success, outsize: 160
+OK: create returns.
+unique: 233, opcode: WRITE (16), nodeid: 271, insize: 84, pid: 1133
+   unique: 233, success, outsize: 24
+unique: 234, opcode: RELEASE (18), nodeid: 271, insize: 64, pid: 0
+   unique: 234, success, outsize: 16
+unique: 235, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611885 1542611885 1542611885
+   unique: 235, success, outsize: 144
+unique: 236, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-6under inode No.255
+In lookup: lookup failed!
+   unique: 236, error: -2 (No such file or directory), outsize: 16
+unique: 237, opcode: CREATE (35), nodeid: 255, insize: 61, pid: 1133
+In create: creating file named bb-6under inode No.255
+In lookup: searching file named bb-6under inode No.255
+In lookup: lookup failed!
+In create: file named bb-6created with inode No.272
+isfile: 272 is a file
+getattr 0000000000000110 1
+isfile: 272 is a file
+getfile 0000000000000110
+getfile 0000000000000110 -> sz 0
+   getattr -> 0
+   unique: 237, success, outsize: 160
+OK: create returns.
+unique: 238, opcode: WRITE (16), nodeid: 272, insize: 84, pid: 1133
+   unique: 238, success, outsize: 24
+unique: 239, opcode: RELEASE (18), nodeid: 272, insize: 64, pid: 0
+   unique: 239, success, outsize: 16
+unique: 240, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611885 1542611885 1542611885
+   unique: 240, success, outsize: 144
+unique: 241, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-7under inode No.255
+In lookup: lookup failed!
+   unique: 241, error: -2 (No such file or directory), outsize: 16
+unique: 242, opcode: CREATE (35), nodeid: 255, insize: 61, pid: 1133
+In create: creating file named bb-7under inode No.255
+In lookup: searching file named bb-7under inode No.255
+In lookup: lookup failed!
+In create: file named bb-7created with inode No.273
+isfile: 273 is a file
+getattr 0000000000000111 1
+isfile: 273 is a file
+getfile 0000000000000111
+getfile 0000000000000111 -> sz 0
+   getattr -> 0
+   unique: 242, success, outsize: 160
+OK: create returns.
+unique: 243, opcode: WRITE (16), nodeid: 273, insize: 84, pid: 1133
+   unique: 243, success, outsize: 24
+unique: 244, opcode: RELEASE (18), nodeid: 273, insize: 64, pid: 0
+   unique: 244, success, outsize: 16
+unique: 245, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611885 1542611885 1542611885
+   unique: 245, success, outsize: 144
+unique: 246, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-8under inode No.255
+In lookup: lookup failed!
+   unique: 246, error: -2 (No such file or directory), outsize: 16
+unique: 247, opcode: CREATE (35), nodeid: 255, insize: 61, pid: 1133
+In create: creating file named bb-8under inode No.255
+In lookup: searching file named bb-8under inode No.255
+In lookup: lookup failed!
+In create: file named bb-8created with inode No.274
+isfile: 274 is a file
+getattr 0000000000000112 1
+isfile: 274 is a file
+getfile 0000000000000112
+getfile 0000000000000112 -> sz 0
+   getattr -> 0
+   unique: 247, success, outsize: 160
+OK: create returns.
+unique: 248, opcode: WRITE (16), nodeid: 274, insize: 84, pid: 1133
+   unique: 248, success, outsize: 24
+unique: 249, opcode: RELEASE (18), nodeid: 274, insize: 64, pid: 0
+   unique: 249, success, outsize: 16
+unique: 250, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611885 1542611885 1542611885
+   unique: 250, success, outsize: 144
+unique: 251, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-9under inode No.255
+In lookup: lookup failed!
+   unique: 251, error: -2 (No such file or directory), outsize: 16
+unique: 252, opcode: CREATE (35), nodeid: 255, insize: 61, pid: 1133
+In create: creating file named bb-9under inode No.255
+In lookup: searching file named bb-9under inode No.255
+In lookup: lookup failed!
+In create: file named bb-9created with inode No.275
+isfile: 275 is a file
+getattr 0000000000000113 1
+isfile: 275 is a file
+getfile 0000000000000113
+getfile 0000000000000113 -> sz 0
+   getattr -> 0
+   unique: 252, success, outsize: 160
+OK: create returns.
+unique: 253, opcode: WRITE (16), nodeid: 275, insize: 84, pid: 1133
+   unique: 253, success, outsize: 24
+unique: 254, opcode: RELEASE (18), nodeid: 275, insize: 64, pid: 0
+   unique: 254, success, outsize: 16
+unique: 255, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611885 1542611885 1542611885
+   unique: 255, success, outsize: 144
+unique: 256, opcode: OPENDIR (27), nodeid: 255, insize: 48, pid: 1133
+   unique: 256, success, outsize: 32
+unique: 257, opcode: GETATTR (3), nodeid: 255, insize: 56, pid: 1133
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611885 1542611885 1542611885
+   unique: 257, success, outsize: 120
+unique: 258, opcode: READDIR (28), nodeid: 255, insize: 80, pid: 1133
+fuseserver_readdir
+isdir: 255 is a dir
+   unique: 258, success, outsize: 656
+unique: 259, opcode: READDIR (28), nodeid: 255, insize: 80, pid: 1133
+fuseserver_readdir
+isdir: 255 is a dir
+   unique: 259, success, outsize: 16
+unique: 260, opcode: RELEASEDIR (29), nodeid: 255, insize: 64, pid: 0
+   unique: 260, success, outsize: 16
+unique: 261, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611885 1542611885 1542611885
+   unique: 261, success, outsize: 144
+unique: 262, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-0under inode No.255
+isfile: 266 is a file
+getattr 000000000000010a 1
+isfile: 266 is a file
+getfile 000000000000010a
+getfile 000000000000010a -> sz 4
+   getattr -> 4
+   unique: 262, success, outsize: 144
+unique: 263, opcode: OPEN (14), nodeid: 266, insize: 48, pid: 1133
+   unique: 263, success, outsize: 32
+unique: 264, opcode: READ (15), nodeid: 266, insize: 80, pid: 1133
+   unique: 264, success, outsize: 20
+unique: 265, opcode: RELEASE (18), nodeid: 266, insize: 64, pid: 0
+   unique: 265, success, outsize: 16
+unique: 266, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611885 1542611885 1542611885
+   unique: 266, success, outsize: 144
+unique: 267, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-1under inode No.255
+isfile: 267 is a file
+getattr 000000000000010b 1
+isfile: 267 is a file
+getfile 000000000000010b
+getfile 000000000000010b -> sz 4
+   getattr -> 4
+   unique: 267, success, outsize: 144
+unique: 268, opcode: OPEN (14), nodeid: 267, insize: 48, pid: 1133
+   unique: 268, success, outsize: 32
+unique: 269, opcode: READ (15), nodeid: 267, insize: 80, pid: 1133
+   unique: 269, success, outsize: 20
+unique: 270, opcode: RELEASE (18), nodeid: 267, insize: 64, pid: 0
+   unique: 270, success, outsize: 16
+unique: 271, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611885 1542611885 1542611885
+   unique: 271, success, outsize: 144
+unique: 272, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-2under inode No.255
+isfile: 268 is a file
+getattr 000000000000010c 1
+isfile: 268 is a file
+getfile 000000000000010c
+getfile 000000000000010c -> sz 4
+   getattr -> 4
+   unique: 272, success, outsize: 144
+unique: 273, opcode: OPEN (14), nodeid: 268, insize: 48, pid: 1133
+   unique: 273, success, outsize: 32
+unique: 274, opcode: READ (15), nodeid: 268, insize: 80, pid: 1133
+   unique: 274, success, outsize: 20
+unique: 275, opcode: RELEASE (18), nodeid: 268, insize: 64, pid: 0
+   unique: 275, success, outsize: 16
+unique: 276, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611885 1542611885 1542611885
+   unique: 276, success, outsize: 144
+unique: 277, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-3under inode No.255
+isfile: 269 is a file
+getattr 000000000000010d 1
+isfile: 269 is a file
+getfile 000000000000010d
+getfile 000000000000010d -> sz 4
+   getattr -> 4
+   unique: 277, success, outsize: 144
+unique: 278, opcode: OPEN (14), nodeid: 269, insize: 48, pid: 1133
+   unique: 278, success, outsize: 32
+unique: 279, opcode: READ (15), nodeid: 269, insize: 80, pid: 1133
+   unique: 279, success, outsize: 20
+unique: 280, opcode: RELEASE (18), nodeid: 269, insize: 64, pid: 0
+   unique: 280, success, outsize: 16
+unique: 281, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611885 1542611885 1542611885
+   unique: 281, success, outsize: 144
+unique: 282, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-4under inode No.255
+isfile: 270 is a file
+getattr 000000000000010e 1
+isfile: 270 is a file
+getfile 000000000000010e
+getfile 000000000000010e -> sz 4
+   getattr -> 4
+   unique: 282, success, outsize: 144
+unique: 283, opcode: OPEN (14), nodeid: 270, insize: 48, pid: 1133
+   unique: 283, success, outsize: 32
+unique: 284, opcode: READ (15), nodeid: 270, insize: 80, pid: 1133
+   unique: 284, success, outsize: 20
+unique: 285, opcode: RELEASE (18), nodeid: 270, insize: 64, pid: 0
+   unique: 285, success, outsize: 16
+unique: 286, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611885 1542611885 1542611885
+   unique: 286, success, outsize: 144
+unique: 287, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-5under inode No.255
+isfile: 271 is a file
+getattr 000000000000010f 1
+isfile: 271 is a file
+getfile 000000000000010f
+getfile 000000000000010f -> sz 4
+   getattr -> 4
+   unique: 287, success, outsize: 144
+unique: 288, opcode: OPEN (14), nodeid: 271, insize: 48, pid: 1133
+   unique: 288, success, outsize: 32
+unique: 289, opcode: READ (15), nodeid: 271, insize: 80, pid: 1133
+   unique: 289, success, outsize: 20
+unique: 290, opcode: RELEASE (18), nodeid: 271, insize: 64, pid: 0
+   unique: 290, success, outsize: 16
+unique: 291, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611885 1542611885 1542611885
+   unique: 291, success, outsize: 144
+unique: 292, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-6under inode No.255
+isfile: 272 is a file
+getattr 0000000000000110 1
+isfile: 272 is a file
+getfile 0000000000000110
+getfile 0000000000000110 -> sz 4
+   getattr -> 4
+   unique: 292, success, outsize: 144
+unique: 293, opcode: OPEN (14), nodeid: 272, insize: 48, pid: 1133
+   unique: 293, success, outsize: 32
+unique: 294, opcode: READ (15), nodeid: 272, insize: 80, pid: 1133
+   unique: 294, success, outsize: 20
+unique: 295, opcode: RELEASE (18), nodeid: 272, insize: 64, pid: 0
+   unique: 295, success, outsize: 16
+unique: 296, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611886 1542611885 1542611886
+   unique: 296, success, outsize: 144
+unique: 297, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-7under inode No.255
+isfile: 273 is a file
+getattr 0000000000000111 1
+isfile: 273 is a file
+getfile 0000000000000111
+getfile 0000000000000111 -> sz 4
+   getattr -> 4
+   unique: 297, success, outsize: 144
+unique: 298, opcode: OPEN (14), nodeid: 273, insize: 48, pid: 1133
+   unique: 298, success, outsize: 32
+unique: 299, opcode: READ (15), nodeid: 273, insize: 80, pid: 1133
+   unique: 299, success, outsize: 20
+unique: 300, opcode: RELEASE (18), nodeid: 273, insize: 64, pid: 0
+   unique: 300, success, outsize: 16
+unique: 301, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611886 1542611885 1542611886
+   unique: 301, success, outsize: 144
+unique: 302, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-8under inode No.255
+isfile: 274 is a file
+getattr 0000000000000112 1
+isfile: 274 is a file
+getfile 0000000000000112
+getfile 0000000000000112 -> sz 4
+   getattr -> 4
+   unique: 302, success, outsize: 144
+unique: 303, opcode: OPEN (14), nodeid: 274, insize: 48, pid: 1133
+   unique: 303, success, outsize: 32
+unique: 304, opcode: READ (15), nodeid: 274, insize: 80, pid: 1133
+   unique: 304, success, outsize: 20
+unique: 305, opcode: RELEASE (18), nodeid: 274, insize: 64, pid: 0
+   unique: 305, success, outsize: 16
+unique: 306, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611886 1542611885 1542611886
+   unique: 306, success, outsize: 144
+unique: 307, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-9under inode No.255
+isfile: 275 is a file
+getattr 0000000000000113 1
+isfile: 275 is a file
+getfile 0000000000000113
+getfile 0000000000000113 -> sz 4
+   getattr -> 4
+   unique: 307, success, outsize: 144
+unique: 308, opcode: OPEN (14), nodeid: 275, insize: 48, pid: 1133
+   unique: 308, success, outsize: 32
+unique: 309, opcode: READ (15), nodeid: 275, insize: 80, pid: 1133
+   unique: 309, success, outsize: 20
+unique: 310, opcode: RELEASE (18), nodeid: 275, insize: 64, pid: 0
+   unique: 310, success, outsize: 16
+unique: 311, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611886 1542611885 1542611886
+   unique: 311, success, outsize: 144
+unique: 312, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named aa-0under inode No.255
+isfile: 256 is a file
+getattr 0000000000000100 1
+isfile: 256 is a file
+getfile 0000000000000100
+getfile 0000000000000100 -> sz 4
+   getattr -> 4
+   unique: 312, success, outsize: 144
+unique: 313, opcode: OPEN (14), nodeid: 256, insize: 48, pid: 1133
+   unique: 313, success, outsize: 32
+unique: 314, opcode: READ (15), nodeid: 256, insize: 80, pid: 1133
+   unique: 314, success, outsize: 20
+unique: 315, opcode: RELEASE (18), nodeid: 256, insize: 64, pid: 0
+   unique: 315, success, outsize: 16
+unique: 316, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611886 1542611885 1542611886
+   unique: 316, success, outsize: 144
+unique: 317, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named aa-1under inode No.255
+isfile: 257 is a file
+getattr 0000000000000101 1
+isfile: 257 is a file
+getfile 0000000000000101
+getfile 0000000000000101 -> sz 4
+   getattr -> 4
+   unique: 317, success, outsize: 144
+unique: 318, opcode: OPEN (14), nodeid: 257, insize: 48, pid: 1133
+   unique: 318, success, outsize: 32
+unique: 319, opcode: READ (15), nodeid: 257, insize: 80, pid: 1133
+   unique: 319, success, outsize: 20
+unique: 320, opcode: RELEASE (18), nodeid: 257, insize: 64, pid: 0
+   unique: 320, success, outsize: 16
+unique: 321, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611886 1542611885 1542611886
+   unique: 321, success, outsize: 144
+unique: 322, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named aa-2under inode No.255
+isfile: 258 is a file
+getattr 0000000000000102 1
+isfile: 258 is a file
+getfile 0000000000000102
+getfile 0000000000000102 -> sz 4
+   getattr -> 4
+   unique: 322, success, outsize: 144
+unique: 323, opcode: OPEN (14), nodeid: 258, insize: 48, pid: 1133
+   unique: 323, success, outsize: 32
+unique: 324, opcode: READ (15), nodeid: 258, insize: 80, pid: 1133
+   unique: 324, success, outsize: 20
+unique: 325, opcode: RELEASE (18), nodeid: 258, insize: 64, pid: 0
+   unique: 325, success, outsize: 16
+unique: 326, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611886 1542611885 1542611886
+   unique: 326, success, outsize: 144
+unique: 327, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named aa-3under inode No.255
+isfile: 259 is a file
+getattr 0000000000000103 1
+isfile: 259 is a file
+getfile 0000000000000103
+getfile 0000000000000103 -> sz 4
+   getattr -> 4
+   unique: 327, success, outsize: 144
+unique: 328, opcode: OPEN (14), nodeid: 259, insize: 48, pid: 1133
+   unique: 328, success, outsize: 32
+unique: 329, opcode: READ (15), nodeid: 259, insize: 80, pid: 1133
+   unique: 329, success, outsize: 20
+unique: 330, opcode: RELEASE (18), nodeid: 259, insize: 64, pid: 0
+   unique: 330, success, outsize: 16
+unique: 331, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611886 1542611885 1542611886
+   unique: 331, success, outsize: 144
+unique: 332, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named aa-4under inode No.255
+isfile: 260 is a file
+getattr 0000000000000104 1
+isfile: 260 is a file
+getfile 0000000000000104
+getfile 0000000000000104 -> sz 4
+   getattr -> 4
+   unique: 332, success, outsize: 144
+unique: 333, opcode: OPEN (14), nodeid: 260, insize: 48, pid: 1133
+   unique: 333, success, outsize: 32
+unique: 334, opcode: READ (15), nodeid: 260, insize: 80, pid: 1133
+   unique: 334, success, outsize: 20
+unique: 335, opcode: RELEASE (18), nodeid: 260, insize: 64, pid: 0
+   unique: 335, success, outsize: 16
+unique: 336, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611886 1542611885 1542611886
+   unique: 336, success, outsize: 144
+unique: 337, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named aa-5under inode No.255
+isfile: 261 is a file
+getattr 0000000000000105 1
+isfile: 261 is a file
+getfile 0000000000000105
+getfile 0000000000000105 -> sz 4
+   getattr -> 4
+   unique: 337, success, outsize: 144
+unique: 338, opcode: OPEN (14), nodeid: 261, insize: 48, pid: 1133
+   unique: 338, success, outsize: 32
+unique: 339, opcode: READ (15), nodeid: 261, insize: 80, pid: 1133
+   unique: 339, success, outsize: 20
+unique: 340, opcode: RELEASE (18), nodeid: 261, insize: 64, pid: 0
+   unique: 340, success, outsize: 16
+unique: 341, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611886 1542611885 1542611886
+   unique: 341, success, outsize: 144
+unique: 342, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named aa-6under inode No.255
+isfile: 262 is a file
+getattr 0000000000000106 1
+isfile: 262 is a file
+getfile 0000000000000106
+getfile 0000000000000106 -> sz 4
+   getattr -> 4
+   unique: 342, success, outsize: 144
+unique: 343, opcode: OPEN (14), nodeid: 262, insize: 48, pid: 1133
+   unique: 343, success, outsize: 32
+unique: 344, opcode: READ (15), nodeid: 262, insize: 80, pid: 1133
+   unique: 344, success, outsize: 20
+unique: 345, opcode: RELEASE (18), nodeid: 262, insize: 64, pid: 0
+   unique: 345, success, outsize: 16
+unique: 346, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611886 1542611885 1542611886
+   unique: 346, success, outsize: 144
+unique: 347, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named aa-7under inode No.255
+isfile: 263 is a file
+getattr 0000000000000107 1
+isfile: 263 is a file
+getfile 0000000000000107
+getfile 0000000000000107 -> sz 4
+   getattr -> 4
+   unique: 347, success, outsize: 144
+unique: 348, opcode: OPEN (14), nodeid: 263, insize: 48, pid: 1133
+   unique: 348, success, outsize: 32
+unique: 349, opcode: READ (15), nodeid: 263, insize: 80, pid: 1133
+   unique: 349, success, outsize: 20
+unique: 350, opcode: RELEASE (18), nodeid: 263, insize: 64, pid: 0
+   unique: 350, success, outsize: 16
+unique: 351, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611886 1542611885 1542611886
+   unique: 351, success, outsize: 144
+unique: 352, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named aa-8under inode No.255
+isfile: 264 is a file
+getattr 0000000000000108 1
+isfile: 264 is a file
+getfile 0000000000000108
+getfile 0000000000000108 -> sz 4
+   getattr -> 4
+   unique: 352, success, outsize: 144
+unique: 353, opcode: OPEN (14), nodeid: 264, insize: 48, pid: 1133
+   unique: 353, success, outsize: 32
+unique: 354, opcode: READ (15), nodeid: 264, insize: 80, pid: 1133
+   unique: 354, success, outsize: 20
+unique: 355, opcode: RELEASE (18), nodeid: 264, insize: 64, pid: 0
+   unique: 355, success, outsize: 16
+unique: 356, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611886 1542611885 1542611886
+   unique: 356, success, outsize: 144
+unique: 357, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named aa-9under inode No.255
+isfile: 265 is a file
+getattr 0000000000000109 1
+isfile: 265 is a file
+getfile 0000000000000109
+getfile 0000000000000109 -> sz 4
+   getattr -> 4
+   unique: 357, success, outsize: 144
+unique: 358, opcode: OPEN (14), nodeid: 265, insize: 48, pid: 1133
+   unique: 358, success, outsize: 32
+unique: 359, opcode: READ (15), nodeid: 265, insize: 80, pid: 1133
+   unique: 359, success, outsize: 20
+unique: 360, opcode: RELEASE (18), nodeid: 265, insize: 64, pid: 0
+   unique: 360, success, outsize: 16
+unique: 361, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611887 1542611887 1542611887
+   unique: 361, success, outsize: 144
+unique: 362, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-0under inode No.255
+isfile: 266 is a file
+getattr 000000000000010a 1
+isfile: 266 is a file
+getfile 000000000000010a
+getfile 000000000000010a -> sz 4
+   getattr -> 4
+   unique: 362, success, outsize: 144
+unique: 363, opcode: UNLINK (10), nodeid: 255, insize: 45, pid: 1133
+   unique: 363, success, outsize: 16
+unique: 364, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611888 1542611888 1542611888
+   unique: 364, success, outsize: 144
+unique: 365, opcode: FORGET (2), nodeid: 266, insize: 48, pid: 0
+unique: 366, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-1under inode No.255
+isfile: 267 is a file
+getattr 000000000000010b 1
+isfile: 267 is a file
+getfile 000000000000010b
+getfile 000000000000010b -> sz 4
+   getattr -> 4
+   unique: 366, success, outsize: 144
+unique: 367, opcode: UNLINK (10), nodeid: 255, insize: 45, pid: 1133
+   unique: 367, success, outsize: 16
+unique: 368, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611888 1542611888 1542611888
+   unique: 368, success, outsize: 144
+unique: 369, opcode: FORGET (2), nodeid: 267, insize: 48, pid: 0
+unique: 370, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-2under inode No.255
+isfile: 268 is a file
+getattr 000000000000010c 1
+isfile: 268 is a file
+getfile 000000000000010c
+getfile 000000000000010c -> sz 4
+   getattr -> 4
+   unique: 370, success, outsize: 144
+unique: 371, opcode: UNLINK (10), nodeid: 255, insize: 45, pid: 1133
+   unique: 371, success, outsize: 16
+unique: 372, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611888 1542611888 1542611888
+   unique: 372, success, outsize: 144
+unique: 373, opcode: FORGET (2), nodeid: 268, insize: 48, pid: 0
+unique: 374, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-3under inode No.255
+isfile: 269 is a file
+getattr 000000000000010d 1
+isfile: 269 is a file
+getfile 000000000000010d
+getfile 000000000000010d -> sz 4
+   getattr -> 4
+   unique: 374, success, outsize: 144
+unique: 375, opcode: UNLINK (10), nodeid: 255, insize: 45, pid: 1133
+   unique: 375, success, outsize: 16
+unique: 376, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611888 1542611888 1542611888
+   unique: 376, success, outsize: 144
+unique: 377, opcode: FORGET (2), nodeid: 269, insize: 48, pid: 0
+unique: 378, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-4under inode No.255
+isfile: 270 is a file
+getattr 000000000000010e 1
+isfile: 270 is a file
+getfile 000000000000010e
+getfile 000000000000010e -> sz 4
+   getattr -> 4
+   unique: 378, success, outsize: 144
+unique: 379, opcode: UNLINK (10), nodeid: 255, insize: 45, pid: 1133
+   unique: 379, success, outsize: 16
+unique: 381, opcode: FORGET (2), nodeid: 270, insize: 48, pid: 0
+unique: 380, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611888 1542611888 1542611888
+   unique: 380, success, outsize: 144
+unique: 382, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-5under inode No.255
+isfile: 271 is a file
+getattr 000000000000010f 1
+isfile: 271 is a file
+getfile 000000000000010f
+getfile 000000000000010f -> sz 4
+   getattr -> 4
+   unique: 382, success, outsize: 144
+unique: 383, opcode: UNLINK (10), nodeid: 255, insize: 45, pid: 1133
+   unique: 383, success, outsize: 16
+unique: 385, opcode: FORGET (2), nodeid: 271, insize: 48, pid: 0
+unique: 384, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611888 1542611888 1542611888
+   unique: 384, success, outsize: 144
+unique: 386, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-6under inode No.255
+isfile: 272 is a file
+getattr 0000000000000110 1
+isfile: 272 is a file
+getfile 0000000000000110
+getfile 0000000000000110 -> sz 4
+   getattr -> 4
+   unique: 386, success, outsize: 144
+unique: 387, opcode: UNLINK (10), nodeid: 255, insize: 45, pid: 1133
+   unique: 387, success, outsize: 16
+unique: 389, opcode: FORGET (2), nodeid: 272, insize: 48, pid: 0
+unique: 388, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611888 1542611888 1542611888
+   unique: 388, success, outsize: 144
+unique: 390, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-7under inode No.255
+isfile: 273 is a file
+getattr 0000000000000111 1
+isfile: 273 is a file
+getfile 0000000000000111
+getfile 0000000000000111 -> sz 4
+   getattr -> 4
+   unique: 390, success, outsize: 144
+unique: 391, opcode: UNLINK (10), nodeid: 255, insize: 45, pid: 1133
+   unique: 391, success, outsize: 16
+unique: 393, opcode: FORGET (2), nodeid: 273, insize: 48, pid: 0
+unique: 392, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611888 1542611888 1542611888
+   unique: 392, success, outsize: 144
+unique: 394, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-8under inode No.255
+isfile: 274 is a file
+getattr 0000000000000112 1
+isfile: 274 is a file
+getfile 0000000000000112
+getfile 0000000000000112 -> sz 4
+   getattr -> 4
+   unique: 394, success, outsize: 144
+unique: 395, opcode: UNLINK (10), nodeid: 255, insize: 45, pid: 1133
+   unique: 395, success, outsize: 16
+unique: 397, opcode: FORGET (2), nodeid: 274, insize: 48, pid: 0
+unique: 396, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611888 1542611888 1542611888
+   unique: 396, success, outsize: 144
+unique: 398, opcode: LOOKUP (1), nodeid: 255, insize: 45, pid: 1133
+In lookup: searching file named bb-9under inode No.255
+isfile: 275 is a file
+getattr 0000000000000113 1
+isfile: 275 is a file
+getfile 0000000000000113
+getfile 0000000000000113 -> sz 4
+   getattr -> 4
+   unique: 398, success, outsize: 144
+unique: 399, opcode: UNLINK (10), nodeid: 255, insize: 45, pid: 1133
+   unique: 399, success, outsize: 16
+unique: 400, opcode: FORGET (2), nodeid: 275, insize: 48, pid: 0
+unique: 401, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1133
+In lookup: searching file named d1133under inode No.1
+isfile: 255 is not a file
+getattr 00000000000000ff 0
+isfile: 255 is not a file
+isdir: 255 is a dir
+getdir 00000000000000ff
+   getattr -> 1542611889 1542611889 1542611889
+   unique: 401, success, outsize: 144
+unique: 402, opcode: LOOKUP (1), nodeid: 255, insize: 43, pid: 1133
+In lookup: searching file named bfunder inode No.255
+isfile: 256 is a file
+getattr 0000000000000100 1
+isfile: 256 is a file
+getfile 0000000000000100
+getfile 0000000000000100 -> sz 20000
+   getattr -> 20000
+   unique: 402, success, outsize: 144
+unique: 403, opcode: OPEN (14), nodeid: 256, insize: 48, pid: 1133
+   unique: 403, success, outsize: 32
+unique: 404, opcode: GETATTR (3), nodeid: 256, insize: 56, pid: 1133
+isfile: 256 is a file
+getattr 0000000000000100 1
+isfile: 256 is a file
+getfile 0000000000000100
+getfile 0000000000000100 -> sz 20000
+   getattr -> 20000
+   unique: 404, success, outsize: 120
+unique: 405, opcode: READ (15), nodeid: 256, insize: 80, pid: 1133
+   unique: 405, success, outsize: 20016
+unique: 406, opcode: RELEASE (18), nodeid: 256, insize: 64, pid: 0
+   unique: 406, success, outsize: 16
+unique: 407, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611890 1542611890 1542611890
+   unique: 407, success, outsize: 144
+unique: 408, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1149
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611891 1542611890 1542611891
+   unique: 408, success, outsize: 144
+unique: 409, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1149
+In lookup: searching file named xx-0under inode No.256
+In lookup: lookup failed!
+   unique: 409, error: -2 (No such file or directory), outsize: 16
+unique: 410, opcode: CREATE (35), nodeid: 256, insize: 61, pid: 1149
+In create: creating file named xx-0under inode No.256
+In lookup: searching file named xx-0under inode No.256
+In lookup: lookup failed!
+In create: file named xx-0created with inode No.258
+isfile: 258 is a file
+getattr 0000000000000102 1
+isfile: 258 is a file
+getfile 0000000000000102
+getfile 0000000000000102 -> sz 0
+   getattr -> 0
+   unique: 410, success, outsize: 160
+OK: create returns.
+unique: 411, opcode: WRITE (16), nodeid: 258, insize: 84, pid: 1149
+   unique: 411, success, outsize: 24
+unique: 412, opcode: RELEASE (18), nodeid: 258, insize: 64, pid: 0
+   unique: 412, success, outsize: 16
+unique: 413, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1149
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611891 1542611891 1542611891
+   unique: 413, success, outsize: 144
+unique: 414, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1149
+In lookup: searching file named xx-1under inode No.256
+In lookup: lookup failed!
+   unique: 414, error: -2 (No such file or directory), outsize: 16
+unique: 415, opcode: CREATE (35), nodeid: 256, insize: 61, pid: 1149
+In create: creating file named xx-1under inode No.256
+In lookup: searching file named xx-1under inode No.256
+In lookup: lookup failed!
+In create: file named xx-1created with inode No.260
+isfile: 260 is a file
+getattr 0000000000000104 1
+isfile: 260 is a file
+getfile 0000000000000104
+getfile 0000000000000104 -> sz 0
+   getattr -> 0
+   unique: 415, success, outsize: 160
+OK: create returns.
+unique: 416, opcode: WRITE (16), nodeid: 260, insize: 84, pid: 1149
+   unique: 416, success, outsize: 24
+unique: 417, opcode: RELEASE (18), nodeid: 260, insize: 64, pid: 0
+   unique: 417, success, outsize: 16
+unique: 418, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1149
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611891 1542611891 1542611891
+   unique: 418, success, outsize: 144
+unique: 419, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1149
+In lookup: searching file named xx-2under inode No.256
+In lookup: lookup failed!
+   unique: 419, error: -2 (No such file or directory), outsize: 16
+unique: 420, opcode: CREATE (35), nodeid: 256, insize: 61, pid: 1149
+In create: creating file named xx-2under inode No.256
+In lookup: searching file named xx-2under inode No.256
+In lookup: lookup failed!
+In create: file named xx-2created with inode No.262
+isfile: 262 is a file
+getattr 0000000000000106 1
+isfile: 262 is a file
+getfile 0000000000000106
+getfile 0000000000000106 -> sz 0
+   getattr -> 0
+   unique: 420, success, outsize: 160
+OK: create returns.
+unique: 421, opcode: WRITE (16), nodeid: 262, insize: 84, pid: 1149
+   unique: 421, success, outsize: 24
+unique: 422, opcode: RELEASE (18), nodeid: 262, insize: 64, pid: 0
+   unique: 422, success, outsize: 16
+unique: 423, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1149
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611891 1542611891 1542611891
+   unique: 423, success, outsize: 144
+unique: 424, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1149
+In lookup: searching file named xx-3under inode No.256
+In lookup: lookup failed!
+   unique: 424, error: -2 (No such file or directory), outsize: 16
+unique: 425, opcode: CREATE (35), nodeid: 256, insize: 61, pid: 1149
+In create: creating file named xx-3under inode No.256
+In lookup: searching file named xx-3under inode No.256
+In lookup: lookup failed!
+In create: file named xx-3created with inode No.264
+isfile: 264 is a file
+getattr 0000000000000108 1
+isfile: 264 is a file
+getfile 0000000000000108
+getfile 0000000000000108 -> sz 0
+   getattr -> 0
+   unique: 425, success, outsize: 160
+OK: create returns.
+unique: 426, opcode: WRITE (16), nodeid: 264, insize: 84, pid: 1149
+   unique: 426, success, outsize: 24
+unique: 427, opcode: RELEASE (18), nodeid: 264, insize: 64, pid: 0
+   unique: 427, success, outsize: 16
+unique: 428, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1149
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611891 1542611891 1542611891
+   unique: 428, success, outsize: 144
+unique: 429, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1149
+In lookup: searching file named xx-4under inode No.256
+In lookup: lookup failed!
+   unique: 429, error: -2 (No such file or directory), outsize: 16
+unique: 430, opcode: CREATE (35), nodeid: 256, insize: 61, pid: 1149
+In create: creating file named xx-4under inode No.256
+In lookup: searching file named xx-4under inode No.256
+In lookup: lookup failed!
+In create: file named xx-4created with inode No.266
+isfile: 266 is a file
+getattr 000000000000010a 1
+isfile: 266 is a file
+getfile 000000000000010a
+getfile 000000000000010a -> sz 0
+   getattr -> 0
+   unique: 430, success, outsize: 160
+OK: create returns.
+unique: 431, opcode: WRITE (16), nodeid: 266, insize: 84, pid: 1149
+   unique: 431, success, outsize: 24
+unique: 432, opcode: RELEASE (18), nodeid: 266, insize: 64, pid: 0
+   unique: 432, success, outsize: 16
+unique: 433, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1149
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611891 1542611891 1542611891
+   unique: 433, success, outsize: 144
+unique: 434, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1149
+In lookup: searching file named xx-5under inode No.256
+In lookup: lookup failed!
+   unique: 434, error: -2 (No such file or directory), outsize: 16
+unique: 435, opcode: CREATE (35), nodeid: 256, insize: 61, pid: 1149
+In create: creating file named xx-5under inode No.256
+In lookup: searching file named xx-5under inode No.256
+In lookup: lookup failed!
+In create: file named xx-5created with inode No.268
+isfile: 268 is a file
+getattr 000000000000010c 1
+isfile: 268 is a file
+getfile 000000000000010c
+getfile 000000000000010c -> sz 0
+   getattr -> 0
+   unique: 435, success, outsize: 160
+OK: create returns.
+unique: 436, opcode: WRITE (16), nodeid: 268, insize: 84, pid: 1149
+   unique: 436, success, outsize: 24
+unique: 437, opcode: RELEASE (18), nodeid: 268, insize: 64, pid: 0
+   unique: 437, success, outsize: 16
+unique: 438, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1149
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611891 1542611891 1542611891
+   unique: 438, success, outsize: 144
+unique: 439, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1149
+In lookup: searching file named xx-6under inode No.256
+In lookup: lookup failed!
+   unique: 439, error: -2 (No such file or directory), outsize: 16
+unique: 440, opcode: CREATE (35), nodeid: 256, insize: 61, pid: 1149
+In create: creating file named xx-6under inode No.256
+In lookup: searching file named xx-6under inode No.256
+In lookup: lookup failed!
+In create: file named xx-6created with inode No.270
+isfile: 270 is a file
+getattr 000000000000010e 1
+isfile: 270 is a file
+getfile 000000000000010e
+getfile 000000000000010e -> sz 0
+   getattr -> 0
+   unique: 440, success, outsize: 160
+OK: create returns.
+unique: 441, opcode: WRITE (16), nodeid: 270, insize: 84, pid: 1149
+   unique: 441, success, outsize: 24
+unique: 442, opcode: RELEASE (18), nodeid: 270, insize: 64, pid: 0
+   unique: 442, success, outsize: 16
+unique: 443, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1149
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611891 1542611891 1542611891
+   unique: 443, success, outsize: 144
+unique: 444, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1149
+In lookup: searching file named xx-7under inode No.256
+In lookup: lookup failed!
+   unique: 444, error: -2 (No such file or directory), outsize: 16
+unique: 445, opcode: CREATE (35), nodeid: 256, insize: 61, pid: 1149
+In create: creating file named xx-7under inode No.256
+In lookup: searching file named xx-7under inode No.256
+In lookup: lookup failed!
+In create: file named xx-7created with inode No.272
+isfile: 272 is a file
+getattr 0000000000000110 1
+isfile: 272 is a file
+getfile 0000000000000110
+getfile 0000000000000110 -> sz 0
+   getattr -> 0
+   unique: 445, success, outsize: 160
+OK: create returns.
+unique: 446, opcode: WRITE (16), nodeid: 272, insize: 84, pid: 1149
+   unique: 446, success, outsize: 24
+unique: 447, opcode: RELEASE (18), nodeid: 272, insize: 64, pid: 0
+   unique: 447, success, outsize: 16
+unique: 448, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1149
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611891 1542611891 1542611891
+   unique: 448, success, outsize: 144
+unique: 449, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1149
+In lookup: searching file named xx-8under inode No.256
+In lookup: lookup failed!
+   unique: 449, error: -2 (No such file or directory), outsize: 16
+unique: 450, opcode: CREATE (35), nodeid: 256, insize: 61, pid: 1149
+In create: creating file named xx-8under inode No.256
+In lookup: searching file named xx-8under inode No.256
+In lookup: lookup failed!
+In create: file named xx-8created with inode No.274
+isfile: 274 is a file
+getattr 0000000000000112 1
+isfile: 274 is a file
+getfile 0000000000000112
+getfile 0000000000000112 -> sz 0
+   getattr -> 0
+   unique: 450, success, outsize: 160
+OK: create returns.
+unique: 451, opcode: WRITE (16), nodeid: 274, insize: 84, pid: 1149
+   unique: 451, success, outsize: 24
+unique: 452, opcode: RELEASE (18), nodeid: 274, insize: 64, pid: 0
+   unique: 452, success, outsize: 16
+unique: 453, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1149
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611891 1542611891 1542611891
+   unique: 453, success, outsize: 144
+unique: 454, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1149
+In lookup: searching file named xx-9under inode No.256
+In lookup: lookup failed!
+   unique: 454, error: -2 (No such file or directory), outsize: 16
+unique: 455, opcode: CREATE (35), nodeid: 256, insize: 61, pid: 1149
+In create: creating file named xx-9under inode No.256
+In lookup: searching file named xx-9under inode No.256
+In lookup: lookup failed!
+In create: file named xx-9created with inode No.276
+isfile: 276 is a file
+getattr 0000000000000114 1
+isfile: 276 is a file
+getfile 0000000000000114
+getfile 0000000000000114 -> sz 0
+   getattr -> 0
+   unique: 455, success, outsize: 160
+OK: create returns.
+unique: 456, opcode: WRITE (16), nodeid: 276, insize: 84, pid: 1149
+   unique: 456, success, outsize: 24
+unique: 457, opcode: RELEASE (18), nodeid: 276, insize: 64, pid: 0
+   unique: 457, success, outsize: 16
+unique: 458, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611895 1542611891 1542611895
+   unique: 458, success, outsize: 144
+unique: 459, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named yy-0under inode No.256
+isfile: 257 is a file
+getattr 0000000000000101 1
+isfile: 257 is a file
+getfile 0000000000000101
+getfile 0000000000000101 -> sz 4
+   getattr -> 4
+   unique: 459, success, outsize: 144
+unique: 460, opcode: OPEN (14), nodeid: 257, insize: 48, pid: 1147
+   unique: 460, success, outsize: 32
+unique: 461, opcode: READ (15), nodeid: 257, insize: 80, pid: 1147
+   unique: 461, success, outsize: 20
+unique: 462, opcode: RELEASE (18), nodeid: 257, insize: 64, pid: 0
+   unique: 462, success, outsize: 16
+unique: 463, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611895 1542611891 1542611895
+   unique: 463, success, outsize: 144
+unique: 464, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named yy-1under inode No.256
+isfile: 259 is a file
+getattr 0000000000000103 1
+isfile: 259 is a file
+getfile 0000000000000103
+getfile 0000000000000103 -> sz 4
+   getattr -> 4
+   unique: 464, success, outsize: 144
+unique: 465, opcode: OPEN (14), nodeid: 259, insize: 48, pid: 1147
+   unique: 465, success, outsize: 32
+unique: 466, opcode: READ (15), nodeid: 259, insize: 80, pid: 1147
+   unique: 466, success, outsize: 20
+unique: 467, opcode: RELEASE (18), nodeid: 259, insize: 64, pid: 0
+   unique: 467, success, outsize: 16
+unique: 468, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611895 1542611891 1542611895
+   unique: 468, success, outsize: 144
+unique: 469, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named yy-2under inode No.256
+isfile: 261 is a file
+getattr 0000000000000105 1
+isfile: 261 is a file
+getfile 0000000000000105
+getfile 0000000000000105 -> sz 4
+   getattr -> 4
+   unique: 469, success, outsize: 144
+unique: 470, opcode: OPEN (14), nodeid: 261, insize: 48, pid: 1147
+   unique: 470, success, outsize: 32
+unique: 471, opcode: READ (15), nodeid: 261, insize: 80, pid: 1147
+   unique: 471, success, outsize: 20
+unique: 472, opcode: RELEASE (18), nodeid: 261, insize: 64, pid: 0
+   unique: 472, success, outsize: 16
+unique: 473, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611895 1542611891 1542611895
+   unique: 473, success, outsize: 144
+unique: 474, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named yy-3under inode No.256
+isfile: 263 is a file
+getattr 0000000000000107 1
+isfile: 263 is a file
+getfile 0000000000000107
+getfile 0000000000000107 -> sz 4
+   getattr -> 4
+   unique: 474, success, outsize: 144
+unique: 475, opcode: OPEN (14), nodeid: 263, insize: 48, pid: 1147
+   unique: 475, success, outsize: 32
+unique: 476, opcode: READ (15), nodeid: 263, insize: 80, pid: 1147
+   unique: 476, success, outsize: 20
+unique: 477, opcode: RELEASE (18), nodeid: 263, insize: 64, pid: 0
+   unique: 477, success, outsize: 16
+unique: 478, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611895 1542611891 1542611895
+   unique: 478, success, outsize: 144
+unique: 479, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named yy-4under inode No.256
+isfile: 265 is a file
+getattr 0000000000000109 1
+isfile: 265 is a file
+getfile 0000000000000109
+getfile 0000000000000109 -> sz 4
+   getattr -> 4
+   unique: 479, success, outsize: 144
+unique: 480, opcode: OPEN (14), nodeid: 265, insize: 48, pid: 1147
+   unique: 480, success, outsize: 32
+unique: 481, opcode: READ (15), nodeid: 265, insize: 80, pid: 1147
+   unique: 481, success, outsize: 20
+unique: 482, opcode: RELEASE (18), nodeid: 265, insize: 64, pid: 0
+   unique: 482, success, outsize: 16
+unique: 483, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611895 1542611891 1542611895
+   unique: 483, success, outsize: 144
+unique: 484, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named yy-5under inode No.256
+isfile: 267 is a file
+getattr 000000000000010b 1
+isfile: 267 is a file
+getfile 000000000000010b
+getfile 000000000000010b -> sz 4
+   getattr -> 4
+   unique: 484, success, outsize: 144
+unique: 485, opcode: OPEN (14), nodeid: 267, insize: 48, pid: 1147
+   unique: 485, success, outsize: 32
+unique: 486, opcode: READ (15), nodeid: 267, insize: 80, pid: 1147
+   unique: 486, success, outsize: 20
+unique: 487, opcode: RELEASE (18), nodeid: 267, insize: 64, pid: 0
+   unique: 487, success, outsize: 16
+unique: 488, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611895 1542611891 1542611895
+   unique: 488, success, outsize: 144
+unique: 489, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named yy-6under inode No.256
+isfile: 269 is a file
+getattr 000000000000010d 1
+isfile: 269 is a file
+getfile 000000000000010d
+getfile 000000000000010d -> sz 4
+   getattr -> 4
+   unique: 489, success, outsize: 144
+unique: 490, opcode: OPEN (14), nodeid: 269, insize: 48, pid: 1147
+   unique: 490, success, outsize: 32
+unique: 491, opcode: READ (15), nodeid: 269, insize: 80, pid: 1147
+   unique: 491, success, outsize: 20
+unique: 492, opcode: RELEASE (18), nodeid: 269, insize: 64, pid: 0
+   unique: 492, success, outsize: 16
+unique: 493, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611895 1542611891 1542611895
+   unique: 493, success, outsize: 144
+unique: 494, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named yy-7under inode No.256
+isfile: 271 is a file
+getattr 000000000000010f 1
+isfile: 271 is a file
+getfile 000000000000010f
+getfile 000000000000010f -> sz 4
+   getattr -> 4
+   unique: 494, success, outsize: 144
+unique: 495, opcode: OPEN (14), nodeid: 271, insize: 48, pid: 1147
+   unique: 495, success, outsize: 32
+unique: 496, opcode: READ (15), nodeid: 271, insize: 80, pid: 1147
+   unique: 496, success, outsize: 20
+unique: 497, opcode: RELEASE (18), nodeid: 271, insize: 64, pid: 0
+   unique: 497, success, outsize: 16
+unique: 498, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611896 1542611891 1542611896
+   unique: 498, success, outsize: 144
+unique: 499, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named yy-8under inode No.256
+isfile: 273 is a file
+getattr 0000000000000111 1
+isfile: 273 is a file
+getfile 0000000000000111
+getfile 0000000000000111 -> sz 4
+   getattr -> 4
+   unique: 499, success, outsize: 144
+unique: 500, opcode: OPEN (14), nodeid: 273, insize: 48, pid: 1147
+   unique: 500, success, outsize: 32
+unique: 501, opcode: READ (15), nodeid: 273, insize: 80, pid: 1147
+   unique: 501, success, outsize: 20
+unique: 502, opcode: RELEASE (18), nodeid: 273, insize: 64, pid: 0
+   unique: 502, success, outsize: 16
+unique: 503, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611896 1542611891 1542611896
+   unique: 503, success, outsize: 144
+unique: 504, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named yy-9under inode No.256
+isfile: 275 is a file
+getattr 0000000000000113 1
+isfile: 275 is a file
+getfile 0000000000000113
+getfile 0000000000000113 -> sz 4
+   getattr -> 4
+   unique: 504, success, outsize: 144
+unique: 505, opcode: OPEN (14), nodeid: 275, insize: 48, pid: 1147
+   unique: 505, success, outsize: 32
+unique: 506, opcode: READ (15), nodeid: 275, insize: 80, pid: 1147
+   unique: 506, success, outsize: 20
+unique: 507, opcode: RELEASE (18), nodeid: 275, insize: 64, pid: 0
+   unique: 507, success, outsize: 16
+unique: 508, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1150
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611898 1542611898 1542611898
+   unique: 508, success, outsize: 144
+unique: 509, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1150
+In lookup: searching file named zz-0under inode No.256
+In lookup: lookup failed!
+   unique: 509, error: -2 (No such file or directory), outsize: 16
+unique: 510, opcode: CREATE (35), nodeid: 256, insize: 61, pid: 1150
+In create: creating file named zz-0under inode No.256
+In lookup: searching file named zz-0under inode No.256
+In lookup: lookup failed!
+In create: file named zz-0created with inode No.257
+isfile: 257 is a file
+getattr 0000000000000101 1
+isfile: 257 is a file
+getfile 0000000000000101
+getfile 0000000000000101 -> sz 0
+   getattr -> 0
+   unique: 510, success, outsize: 160
+OK: create returns.
+unique: 511, opcode: WRITE (16), nodeid: 257, insize: 84, pid: 1150
+   unique: 511, success, outsize: 24
+unique: 512, opcode: RELEASE (18), nodeid: 257, insize: 64, pid: 0
+   unique: 512, success, outsize: 16
+unique: 513, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1150
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611899 1542611899 1542611899
+   unique: 513, success, outsize: 144
+unique: 514, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1150
+In lookup: searching file named zz-1under inode No.256
+isfile: 258 is a file
+getattr 0000000000000102 1
+isfile: 258 is a file
+getfile 0000000000000102
+getfile 0000000000000102 -> sz 4
+   getattr -> 4
+   unique: 514, success, outsize: 144
+unique: 515, opcode: OPEN (14), nodeid: 258, insize: 48, pid: 1150
+   unique: 515, success, outsize: 32
+unique: 516, opcode: SETATTR (4), nodeid: 258, insize: 128, pid: 1150
+fuseserver_setattr 0x8
+   fuseserver_setattr set size to 0
+In setattr: setting attributes on inode No.258
+isfile: 258 is a file
+getattr 0000000000000102 1
+isfile: 258 is a file
+getfile 0000000000000102
+getfile 0000000000000102 -> sz 0
+   getattr -> 0
+   unique: 516, success, outsize: 120
+unique: 517, opcode: WRITE (16), nodeid: 258, insize: 84, pid: 1150
+   unique: 517, success, outsize: 24
+unique: 518, opcode: RELEASE (18), nodeid: 258, insize: 64, pid: 0
+   unique: 518, success, outsize: 16
+unique: 519, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1150
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611899 1542611899 1542611899
+   unique: 519, success, outsize: 144
+unique: 520, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1150
+In lookup: searching file named zz-2under inode No.256
+isfile: 259 is a file
+getattr 0000000000000103 1
+isfile: 259 is a file
+getfile 0000000000000103
+getfile 0000000000000103 -> sz 4
+   getattr -> 4
+   unique: 520, success, outsize: 144
+unique: 521, opcode: OPEN (14), nodeid: 259, insize: 48, pid: 1150
+   unique: 521, success, outsize: 32
+unique: 522, opcode: SETATTR (4), nodeid: 259, insize: 128, pid: 1150
+fuseserver_setattr 0x8
+   fuseserver_setattr set size to 0
+In setattr: setting attributes on inode No.259
+isfile: 259 is a file
+getattr 0000000000000103 1
+isfile: 259 is a file
+getfile 0000000000000103
+getfile 0000000000000103 -> sz 0
+   getattr -> 0
+   unique: 522, success, outsize: 120
+unique: 523, opcode: WRITE (16), nodeid: 259, insize: 84, pid: 1150
+   unique: 523, success, outsize: 24
+unique: 524, opcode: RELEASE (18), nodeid: 259, insize: 64, pid: 0
+   unique: 524, success, outsize: 16
+unique: 525, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1150
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611899 1542611899 1542611899
+   unique: 525, success, outsize: 144
+unique: 526, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1150
+In lookup: searching file named zz-3under inode No.256
+isfile: 260 is a file
+getattr 0000000000000104 1
+isfile: 260 is a file
+getfile 0000000000000104
+getfile 0000000000000104 -> sz 4
+   getattr -> 4
+   unique: 526, success, outsize: 144
+unique: 527, opcode: OPEN (14), nodeid: 260, insize: 48, pid: 1150
+   unique: 527, success, outsize: 32
+unique: 528, opcode: SETATTR (4), nodeid: 260, insize: 128, pid: 1150
+fuseserver_setattr 0x8
+   fuseserver_setattr set size to 0
+In setattr: setting attributes on inode No.260
+isfile: 260 is a file
+getattr 0000000000000104 1
+isfile: 260 is a file
+getfile 0000000000000104
+getfile 0000000000000104 -> sz 0
+   getattr -> 0
+   unique: 528, success, outsize: 120
+unique: 529, opcode: WRITE (16), nodeid: 260, insize: 84, pid: 1150
+   unique: 529, success, outsize: 24
+unique: 530, opcode: RELEASE (18), nodeid: 260, insize: 64, pid: 0
+   unique: 530, success, outsize: 16
+unique: 531, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1150
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611899 1542611899 1542611899
+   unique: 531, success, outsize: 144
+unique: 532, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1150
+In lookup: searching file named zz-4under inode No.256
+isfile: 261 is a file
+getattr 0000000000000105 1
+isfile: 261 is a file
+getfile 0000000000000105
+getfile 0000000000000105 -> sz 4
+   getattr -> 4
+   unique: 532, success, outsize: 144
+unique: 533, opcode: OPEN (14), nodeid: 261, insize: 48, pid: 1150
+   unique: 533, success, outsize: 32
+unique: 534, opcode: SETATTR (4), nodeid: 261, insize: 128, pid: 1150
+fuseserver_setattr 0x8
+   fuseserver_setattr set size to 0
+In setattr: setting attributes on inode No.261
+isfile: 261 is a file
+getattr 0000000000000105 1
+isfile: 261 is a file
+getfile 0000000000000105
+getfile 0000000000000105 -> sz 0
+   getattr -> 0
+   unique: 534, success, outsize: 120
+unique: 535, opcode: WRITE (16), nodeid: 261, insize: 84, pid: 1150
+   unique: 535, success, outsize: 24
+unique: 536, opcode: RELEASE (18), nodeid: 261, insize: 64, pid: 0
+   unique: 536, success, outsize: 16
+unique: 537, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1150
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611899 1542611899 1542611899
+   unique: 537, success, outsize: 144
+unique: 538, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1150
+In lookup: searching file named zz-5under inode No.256
+isfile: 262 is a file
+getattr 0000000000000106 1
+isfile: 262 is a file
+getfile 0000000000000106
+getfile 0000000000000106 -> sz 4
+   getattr -> 4
+   unique: 538, success, outsize: 144
+unique: 539, opcode: OPEN (14), nodeid: 262, insize: 48, pid: 1150
+   unique: 539, success, outsize: 32
+unique: 540, opcode: SETATTR (4), nodeid: 262, insize: 128, pid: 1150
+fuseserver_setattr 0x8
+   fuseserver_setattr set size to 0
+In setattr: setting attributes on inode No.262
+isfile: 262 is a file
+getattr 0000000000000106 1
+isfile: 262 is a file
+getfile 0000000000000106
+getfile 0000000000000106 -> sz 0
+   getattr -> 0
+   unique: 540, success, outsize: 120
+unique: 541, opcode: WRITE (16), nodeid: 262, insize: 84, pid: 1150
+   unique: 541, success, outsize: 24
+unique: 542, opcode: RELEASE (18), nodeid: 262, insize: 64, pid: 0
+   unique: 542, success, outsize: 16
+unique: 543, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1150
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611899 1542611899 1542611899
+   unique: 543, success, outsize: 144
+unique: 544, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1150
+In lookup: searching file named zz-6under inode No.256
+isfile: 263 is a file
+getattr 0000000000000107 1
+isfile: 263 is a file
+getfile 0000000000000107
+getfile 0000000000000107 -> sz 4
+   getattr -> 4
+   unique: 544, success, outsize: 144
+unique: 545, opcode: OPEN (14), nodeid: 263, insize: 48, pid: 1150
+   unique: 545, success, outsize: 32
+unique: 546, opcode: SETATTR (4), nodeid: 263, insize: 128, pid: 1150
+fuseserver_setattr 0x8
+   fuseserver_setattr set size to 0
+In setattr: setting attributes on inode No.263
+isfile: 263 is a file
+getattr 0000000000000107 1
+isfile: 263 is a file
+getfile 0000000000000107
+getfile 0000000000000107 -> sz 0
+   getattr -> 0
+   unique: 546, success, outsize: 120
+unique: 547, opcode: WRITE (16), nodeid: 263, insize: 84, pid: 1150
+   unique: 547, success, outsize: 24
+unique: 548, opcode: RELEASE (18), nodeid: 263, insize: 64, pid: 0
+   unique: 548, success, outsize: 16
+unique: 549, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1150
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611899 1542611899 1542611899
+   unique: 549, success, outsize: 144
+unique: 550, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1150
+In lookup: searching file named zz-7under inode No.256
+isfile: 264 is a file
+getattr 0000000000000108 1
+isfile: 264 is a file
+getfile 0000000000000108
+getfile 0000000000000108 -> sz 4
+   getattr -> 4
+   unique: 550, success, outsize: 144
+unique: 551, opcode: OPEN (14), nodeid: 264, insize: 48, pid: 1150
+   unique: 551, success, outsize: 32
+unique: 552, opcode: SETATTR (4), nodeid: 264, insize: 128, pid: 1150
+fuseserver_setattr 0x8
+   fuseserver_setattr set size to 0
+In setattr: setting attributes on inode No.264
+isfile: 264 is a file
+getattr 0000000000000108 1
+isfile: 264 is a file
+getfile 0000000000000108
+getfile 0000000000000108 -> sz 0
+   getattr -> 0
+   unique: 552, success, outsize: 120
+unique: 553, opcode: WRITE (16), nodeid: 264, insize: 84, pid: 1150
+   unique: 553, success, outsize: 24
+unique: 554, opcode: RELEASE (18), nodeid: 264, insize: 64, pid: 0
+   unique: 554, success, outsize: 16
+unique: 555, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1150
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611899 1542611899 1542611899
+   unique: 555, success, outsize: 144
+unique: 556, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1150
+In lookup: searching file named zz-8under inode No.256
+isfile: 265 is a file
+getattr 0000000000000109 1
+isfile: 265 is a file
+getfile 0000000000000109
+getfile 0000000000000109 -> sz 4
+   getattr -> 4
+   unique: 556, success, outsize: 144
+unique: 557, opcode: OPEN (14), nodeid: 265, insize: 48, pid: 1150
+   unique: 557, success, outsize: 32
+unique: 558, opcode: SETATTR (4), nodeid: 265, insize: 128, pid: 1150
+fuseserver_setattr 0x8
+   fuseserver_setattr set size to 0
+In setattr: setting attributes on inode No.265
+isfile: 265 is a file
+getattr 0000000000000109 1
+isfile: 265 is a file
+getfile 0000000000000109
+getfile 0000000000000109 -> sz 0
+   getattr -> 0
+   unique: 558, success, outsize: 120
+unique: 559, opcode: WRITE (16), nodeid: 265, insize: 84, pid: 1150
+   unique: 559, success, outsize: 24
+unique: 560, opcode: RELEASE (18), nodeid: 265, insize: 64, pid: 0
+   unique: 560, success, outsize: 16
+unique: 561, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1150
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611899 1542611899 1542611899
+   unique: 561, success, outsize: 144
+unique: 562, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1150
+In lookup: searching file named zz-9under inode No.256
+isfile: 266 is a file
+getattr 000000000000010a 1
+isfile: 266 is a file
+getfile 000000000000010a
+getfile 000000000000010a -> sz 4
+   getattr -> 4
+   unique: 562, success, outsize: 144
+unique: 563, opcode: OPEN (14), nodeid: 266, insize: 48, pid: 1150
+   unique: 563, success, outsize: 32
+unique: 564, opcode: SETATTR (4), nodeid: 266, insize: 128, pid: 1150
+fuseserver_setattr 0x8
+   fuseserver_setattr set size to 0
+In setattr: setting attributes on inode No.266
+isfile: 266 is a file
+getattr 000000000000010a 1
+isfile: 266 is a file
+getfile 000000000000010a
+getfile 000000000000010a -> sz 0
+   getattr -> 0
+   unique: 564, success, outsize: 120
+unique: 565, opcode: WRITE (16), nodeid: 266, insize: 84, pid: 1150
+   unique: 565, success, outsize: 24
+unique: 566, opcode: RELEASE (18), nodeid: 266, insize: 64, pid: 0
+   unique: 566, success, outsize: 16
+unique: 567, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611903 1542611899 1542611903
+   unique: 567, success, outsize: 144
+unique: 568, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named zz-0under inode No.256
+isfile: 257 is a file
+getattr 0000000000000101 1
+isfile: 257 is a file
+getfile 0000000000000101
+getfile 0000000000000101 -> sz 4
+   getattr -> 4
+   unique: 568, success, outsize: 144
+unique: 569, opcode: OPEN (14), nodeid: 257, insize: 48, pid: 1147
+   unique: 569, success, outsize: 32
+unique: 570, opcode: READ (15), nodeid: 257, insize: 80, pid: 1147
+   unique: 570, success, outsize: 20
+unique: 571, opcode: RELEASE (18), nodeid: 257, insize: 64, pid: 0
+   unique: 571, success, outsize: 16
+unique: 572, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611903 1542611899 1542611903
+   unique: 572, success, outsize: 144
+unique: 573, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named zz-1under inode No.256
+isfile: 258 is a file
+getattr 0000000000000102 1
+isfile: 258 is a file
+getfile 0000000000000102
+getfile 0000000000000102 -> sz 4
+   getattr -> 4
+   unique: 573, success, outsize: 144
+unique: 574, opcode: OPEN (14), nodeid: 258, insize: 48, pid: 1147
+   unique: 574, success, outsize: 32
+unique: 575, opcode: READ (15), nodeid: 258, insize: 80, pid: 1147
+   unique: 575, success, outsize: 20
+unique: 576, opcode: RELEASE (18), nodeid: 258, insize: 64, pid: 0
+   unique: 576, success, outsize: 16
+unique: 577, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611903 1542611899 1542611903
+   unique: 577, success, outsize: 144
+unique: 578, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named zz-2under inode No.256
+isfile: 259 is a file
+getattr 0000000000000103 1
+isfile: 259 is a file
+getfile 0000000000000103
+getfile 0000000000000103 -> sz 4
+   getattr -> 4
+   unique: 578, success, outsize: 144
+unique: 579, opcode: OPEN (14), nodeid: 259, insize: 48, pid: 1147
+   unique: 579, success, outsize: 32
+unique: 580, opcode: READ (15), nodeid: 259, insize: 80, pid: 1147
+   unique: 580, success, outsize: 20
+unique: 581, opcode: RELEASE (18), nodeid: 259, insize: 64, pid: 0
+   unique: 581, success, outsize: 16
+unique: 582, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611903 1542611899 1542611903
+   unique: 582, success, outsize: 144
+unique: 583, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named zz-3under inode No.256
+isfile: 260 is a file
+getattr 0000000000000104 1
+isfile: 260 is a file
+getfile 0000000000000104
+getfile 0000000000000104 -> sz 4
+   getattr -> 4
+   unique: 583, success, outsize: 144
+unique: 584, opcode: OPEN (14), nodeid: 260, insize: 48, pid: 1147
+   unique: 584, success, outsize: 32
+unique: 585, opcode: READ (15), nodeid: 260, insize: 80, pid: 1147
+   unique: 585, success, outsize: 20
+unique: 586, opcode: RELEASE (18), nodeid: 260, insize: 64, pid: 0
+   unique: 586, success, outsize: 16
+unique: 587, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611903 1542611899 1542611903
+   unique: 587, success, outsize: 144
+unique: 588, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named zz-4under inode No.256
+isfile: 261 is a file
+getattr 0000000000000105 1
+isfile: 261 is a file
+getfile 0000000000000105
+getfile 0000000000000105 -> sz 4
+   getattr -> 4
+   unique: 588, success, outsize: 144
+unique: 589, opcode: OPEN (14), nodeid: 261, insize: 48, pid: 1147
+   unique: 589, success, outsize: 32
+unique: 590, opcode: READ (15), nodeid: 261, insize: 80, pid: 1147
+   unique: 590, success, outsize: 20
+unique: 591, opcode: RELEASE (18), nodeid: 261, insize: 64, pid: 0
+   unique: 591, success, outsize: 16
+unique: 592, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611903 1542611899 1542611903
+   unique: 592, success, outsize: 144
+unique: 593, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named zz-5under inode No.256
+isfile: 262 is a file
+getattr 0000000000000106 1
+isfile: 262 is a file
+getfile 0000000000000106
+getfile 0000000000000106 -> sz 4
+   getattr -> 4
+   unique: 593, success, outsize: 144
+unique: 594, opcode: OPEN (14), nodeid: 262, insize: 48, pid: 1147
+   unique: 594, success, outsize: 32
+unique: 595, opcode: READ (15), nodeid: 262, insize: 80, pid: 1147
+   unique: 595, success, outsize: 20
+unique: 596, opcode: RELEASE (18), nodeid: 262, insize: 64, pid: 0
+   unique: 596, success, outsize: 16
+unique: 597, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611903 1542611899 1542611903
+   unique: 597, success, outsize: 144
+unique: 598, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named zz-6under inode No.256
+isfile: 263 is a file
+getattr 0000000000000107 1
+isfile: 263 is a file
+getfile 0000000000000107
+getfile 0000000000000107 -> sz 4
+   getattr -> 4
+   unique: 598, success, outsize: 144
+unique: 599, opcode: OPEN (14), nodeid: 263, insize: 48, pid: 1147
+   unique: 599, success, outsize: 32
+unique: 600, opcode: READ (15), nodeid: 263, insize: 80, pid: 1147
+   unique: 600, success, outsize: 20
+unique: 601, opcode: RELEASE (18), nodeid: 263, insize: 64, pid: 0
+   unique: 601, success, outsize: 16
+unique: 602, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611903 1542611899 1542611903
+   unique: 602, success, outsize: 144
+unique: 603, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named zz-7under inode No.256
+isfile: 264 is a file
+getattr 0000000000000108 1
+isfile: 264 is a file
+getfile 0000000000000108
+getfile 0000000000000108 -> sz 4
+   getattr -> 4
+   unique: 603, success, outsize: 144
+unique: 604, opcode: OPEN (14), nodeid: 264, insize: 48, pid: 1147
+   unique: 604, success, outsize: 32
+unique: 605, opcode: READ (15), nodeid: 264, insize: 80, pid: 1147
+   unique: 605, success, outsize: 20
+unique: 606, opcode: RELEASE (18), nodeid: 264, insize: 64, pid: 0
+   unique: 606, success, outsize: 16
+unique: 607, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611903 1542611899 1542611903
+   unique: 607, success, outsize: 144
+unique: 608, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named zz-8under inode No.256
+isfile: 265 is a file
+getattr 0000000000000109 1
+isfile: 265 is a file
+getfile 0000000000000109
+getfile 0000000000000109 -> sz 4
+   getattr -> 4
+   unique: 608, success, outsize: 144
+unique: 609, opcode: OPEN (14), nodeid: 265, insize: 48, pid: 1147
+   unique: 609, success, outsize: 32
+unique: 610, opcode: READ (15), nodeid: 265, insize: 80, pid: 1147
+   unique: 610, success, outsize: 20
+unique: 611, opcode: RELEASE (18), nodeid: 265, insize: 64, pid: 0
+   unique: 611, success, outsize: 16
+unique: 612, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611903 1542611899 1542611903
+   unique: 612, success, outsize: 144
+unique: 613, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named zz-9under inode No.256
+isfile: 266 is a file
+getattr 000000000000010a 1
+isfile: 266 is a file
+getfile 000000000000010a
+getfile 000000000000010a -> sz 4
+   getattr -> 4
+   unique: 613, success, outsize: 144
+unique: 614, opcode: OPEN (14), nodeid: 266, insize: 48, pid: 1147
+   unique: 614, success, outsize: 32
+unique: 615, opcode: READ (15), nodeid: 266, insize: 80, pid: 1147
+   unique: 615, success, outsize: 20
+unique: 616, opcode: RELEASE (18), nodeid: 266, insize: 64, pid: 0
+   unique: 616, success, outsize: 16
+unique: 617, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611905 1542611905 1542611905
+   unique: 617, success, outsize: 144
+unique: 618, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named x2-0under inode No.256
+In lookup: lookup failed!
+   unique: 618, error: -2 (No such file or directory), outsize: 16
+unique: 619, opcode: CREATE (35), nodeid: 256, insize: 61, pid: 1147
+In create: creating file named x2-0under inode No.256
+In lookup: searching file named x2-0under inode No.256
+In lookup: lookup failed!
+In create: file named x2-0created with inode No.262
+isfile: 262 is a file
+getattr 0000000000000106 1
+isfile: 262 is a file
+getfile 0000000000000106
+getfile 0000000000000106 -> sz 0
+   getattr -> 0
+   unique: 619, success, outsize: 160
+OK: create returns.
+unique: 620, opcode: WRITE (16), nodeid: 262, insize: 84, pid: 1147
+   unique: 620, success, outsize: 24
+unique: 621, opcode: RELEASE (18), nodeid: 262, insize: 64, pid: 0
+   unique: 621, success, outsize: 16
+unique: 622, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611906 1542611906 1542611906
+   unique: 622, success, outsize: 144
+unique: 623, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named x2-1under inode No.256
+In lookup: lookup failed!
+   unique: 623, error: -2 (No such file or directory), outsize: 16
+unique: 624, opcode: CREATE (35), nodeid: 256, insize: 61, pid: 1147
+In create: creating file named x2-1under inode No.256
+In lookup: searching file named x2-1under inode No.256
+In lookup: lookup failed!
+In create: file named x2-1created with inode No.263
+isfile: 263 is a file
+getattr 0000000000000107 1
+isfile: 263 is a file
+getfile 0000000000000107
+getfile 0000000000000107 -> sz 0
+   getattr -> 0
+   unique: 624, success, outsize: 160
+OK: create returns.
+unique: 625, opcode: WRITE (16), nodeid: 263, insize: 84, pid: 1147
+   unique: 625, success, outsize: 24
+unique: 626, opcode: RELEASE (18), nodeid: 263, insize: 64, pid: 0
+   unique: 626, success, outsize: 16
+unique: 627, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611906 1542611906 1542611906
+   unique: 627, success, outsize: 144
+unique: 628, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named x2-2under inode No.256
+In lookup: lookup failed!
+   unique: 628, error: -2 (No such file or directory), outsize: 16
+unique: 629, opcode: CREATE (35), nodeid: 256, insize: 61, pid: 1147
+In create: creating file named x2-2under inode No.256
+In lookup: searching file named x2-2under inode No.256
+In lookup: lookup failed!
+In create: file named x2-2created with inode No.264
+isfile: 264 is a file
+getattr 0000000000000108 1
+isfile: 264 is a file
+getfile 0000000000000108
+getfile 0000000000000108 -> sz 0
+   getattr -> 0
+   unique: 629, success, outsize: 160
+OK: create returns.
+unique: 630, opcode: WRITE (16), nodeid: 264, insize: 84, pid: 1147
+   unique: 630, success, outsize: 24
+unique: 631, opcode: RELEASE (18), nodeid: 264, insize: 64, pid: 0
+   unique: 631, success, outsize: 16
+unique: 632, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611906 1542611906 1542611906
+   unique: 632, success, outsize: 144
+unique: 633, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named x2-3under inode No.256
+In lookup: lookup failed!
+   unique: 633, error: -2 (No such file or directory), outsize: 16
+unique: 634, opcode: CREATE (35), nodeid: 256, insize: 61, pid: 1147
+In create: creating file named x2-3under inode No.256
+In lookup: searching file named x2-3under inode No.256
+In lookup: lookup failed!
+In create: file named x2-3created with inode No.265
+isfile: 265 is a file
+getattr 0000000000000109 1
+isfile: 265 is a file
+getfile 0000000000000109
+getfile 0000000000000109 -> sz 0
+   getattr -> 0
+   unique: 634, success, outsize: 160
+OK: create returns.
+unique: 635, opcode: WRITE (16), nodeid: 265, insize: 84, pid: 1147
+   unique: 635, success, outsize: 24
+unique: 636, opcode: RELEASE (18), nodeid: 265, insize: 64, pid: 0
+   unique: 636, success, outsize: 16
+unique: 637, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611906 1542611906 1542611906
+   unique: 637, success, outsize: 144
+unique: 638, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named x2-4under inode No.256
+In lookup: lookup failed!
+   unique: 638, error: -2 (No such file or directory), outsize: 16
+unique: 639, opcode: CREATE (35), nodeid: 256, insize: 61, pid: 1147
+In create: creating file named x2-4under inode No.256
+In lookup: searching file named x2-4under inode No.256
+In lookup: lookup failed!
+In create: file named x2-4created with inode No.266
+isfile: 266 is a file
+getattr 000000000000010a 1
+isfile: 266 is a file
+getfile 000000000000010a
+getfile 000000000000010a -> sz 0
+   getattr -> 0
+   unique: 639, success, outsize: 160
+OK: create returns.
+unique: 640, opcode: WRITE (16), nodeid: 266, insize: 84, pid: 1147
+   unique: 640, success, outsize: 24
+unique: 641, opcode: RELEASE (18), nodeid: 266, insize: 64, pid: 0
+   unique: 641, success, outsize: 16
+unique: 642, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1151
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611908 1542611907 1542611908
+   unique: 642, success, outsize: 144
+unique: 643, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1151
+In lookup: searching file named x1-0under inode No.256
+isfile: 257 is a file
+getattr 0000000000000101 1
+isfile: 257 is a file
+getfile 0000000000000101
+getfile 0000000000000101 -> sz 4
+   getattr -> 4
+   unique: 643, success, outsize: 144
+unique: 644, opcode: UNLINK (10), nodeid: 256, insize: 45, pid: 1151
+   unique: 644, success, outsize: 16
+unique: 645, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1151
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611908 1542611908 1542611908
+   unique: 645, success, outsize: 144
+unique: 646, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1151
+In lookup: searching file named x1-1under inode No.256
+isfile: 258 is a file
+getattr 0000000000000102 1
+isfile: 258 is a file
+getfile 0000000000000102
+getfile 0000000000000102 -> sz 4
+   getattr -> 4
+   unique: 646, success, outsize: 144
+unique: 647, opcode: UNLINK (10), nodeid: 256, insize: 45, pid: 1151
+   unique: 647, success, outsize: 16
+unique: 648, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1151
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611908 1542611908 1542611908
+   unique: 648, success, outsize: 144
+unique: 649, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1151
+In lookup: searching file named x1-2under inode No.256
+isfile: 259 is a file
+getattr 0000000000000103 1
+isfile: 259 is a file
+getfile 0000000000000103
+getfile 0000000000000103 -> sz 4
+   getattr -> 4
+   unique: 649, success, outsize: 144
+unique: 650, opcode: UNLINK (10), nodeid: 256, insize: 45, pid: 1151
+   unique: 650, success, outsize: 16
+unique: 651, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1151
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611908 1542611908 1542611908
+   unique: 651, success, outsize: 144
+unique: 652, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1151
+In lookup: searching file named x1-3under inode No.256
+isfile: 260 is a file
+getattr 0000000000000104 1
+isfile: 260 is a file
+getfile 0000000000000104
+getfile 0000000000000104 -> sz 4
+   getattr -> 4
+   unique: 652, success, outsize: 144
+unique: 653, opcode: UNLINK (10), nodeid: 256, insize: 45, pid: 1151
+   unique: 653, success, outsize: 16
+unique: 654, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1151
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611908 1542611908 1542611908
+   unique: 654, success, outsize: 144
+unique: 655, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1151
+In lookup: searching file named x1-4under inode No.256
+isfile: 261 is a file
+getattr 0000000000000105 1
+isfile: 261 is a file
+getfile 0000000000000105
+getfile 0000000000000105 -> sz 4
+   getattr -> 4
+   unique: 655, success, outsize: 144
+unique: 656, opcode: UNLINK (10), nodeid: 256, insize: 45, pid: 1151
+   unique: 656, success, outsize: 16
+unique: 657, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611909 1542611909 1542611909
+   unique: 657, success, outsize: 144
+unique: 658, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named x2-0under inode No.256
+isfile: 262 is a file
+getattr 0000000000000106 1
+isfile: 262 is a file
+getfile 0000000000000106
+getfile 0000000000000106 -> sz 4
+   getattr -> 4
+   unique: 658, success, outsize: 144
+unique: 659, opcode: UNLINK (10), nodeid: 256, insize: 45, pid: 1147
+   unique: 659, success, outsize: 16
+unique: 660, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611910 1542611910 1542611910
+   unique: 660, success, outsize: 144
+unique: 661, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named x2-1under inode No.256
+isfile: 263 is a file
+getattr 0000000000000107 1
+isfile: 263 is a file
+getfile 0000000000000107
+getfile 0000000000000107 -> sz 4
+   getattr -> 4
+   unique: 661, success, outsize: 144
+unique: 662, opcode: UNLINK (10), nodeid: 256, insize: 45, pid: 1147
+   unique: 662, success, outsize: 16
+unique: 663, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611910 1542611910 1542611910
+   unique: 663, success, outsize: 144
+unique: 664, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named x2-2under inode No.256
+isfile: 264 is a file
+getattr 0000000000000108 1
+isfile: 264 is a file
+getfile 0000000000000108
+getfile 0000000000000108 -> sz 4
+   getattr -> 4
+   unique: 664, success, outsize: 144
+unique: 665, opcode: UNLINK (10), nodeid: 256, insize: 45, pid: 1147
+   unique: 665, success, outsize: 16
+unique: 666, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611910 1542611910 1542611910
+   unique: 666, success, outsize: 144
+unique: 667, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named x2-3under inode No.256
+isfile: 265 is a file
+getattr 0000000000000109 1
+isfile: 265 is a file
+getfile 0000000000000109
+getfile 0000000000000109 -> sz 4
+   getattr -> 4
+   unique: 667, success, outsize: 144
+unique: 668, opcode: UNLINK (10), nodeid: 256, insize: 45, pid: 1147
+   unique: 668, success, outsize: 16
+unique: 669, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611910 1542611910 1542611910
+   unique: 669, success, outsize: 144
+unique: 670, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named x2-4under inode No.256
+isfile: 266 is a file
+getattr 000000000000010a 1
+isfile: 266 is a file
+getfile 000000000000010a
+getfile 000000000000010a -> sz 4
+   getattr -> 4
+   unique: 670, success, outsize: 144
+unique: 671, opcode: UNLINK (10), nodeid: 256, insize: 45, pid: 1147
+   unique: 671, success, outsize: 16
+unique: 672, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611910 1542611910 1542611910
+   unique: 672, success, outsize: 144
+unique: 673, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named x4-0under inode No.256
+isfile: 267 is a file
+getattr 000000000000010b 1
+isfile: 267 is a file
+getfile 000000000000010b
+getfile 000000000000010b -> sz 4
+   getattr -> 4
+   unique: 673, success, outsize: 144
+unique: 674, opcode: UNLINK (10), nodeid: 256, insize: 45, pid: 1147
+   unique: 674, success, outsize: 16
+unique: 675, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611911 1542611911 1542611911
+   unique: 675, success, outsize: 144
+unique: 676, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named x4-1under inode No.256
+isfile: 257 is a file
+getattr 0000000000000101 1
+isfile: 257 is a file
+getfile 0000000000000101
+getfile 0000000000000101 -> sz 4
+   getattr -> 4
+   unique: 676, success, outsize: 144
+unique: 677, opcode: UNLINK (10), nodeid: 256, insize: 45, pid: 1147
+   unique: 677, success, outsize: 16
+unique: 678, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611911 1542611911 1542611911
+   unique: 678, success, outsize: 144
+unique: 679, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named x4-2under inode No.256
+isfile: 258 is a file
+getattr 0000000000000102 1
+isfile: 258 is a file
+getfile 0000000000000102
+getfile 0000000000000102 -> sz 4
+   getattr -> 4
+   unique: 679, success, outsize: 144
+unique: 680, opcode: UNLINK (10), nodeid: 256, insize: 45, pid: 1147
+   unique: 680, success, outsize: 16
+unique: 681, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611911 1542611911 1542611911
+   unique: 681, success, outsize: 144
+unique: 682, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named x4-3under inode No.256
+isfile: 259 is a file
+getattr 0000000000000103 1
+isfile: 259 is a file
+getfile 0000000000000103
+getfile 0000000000000103 -> sz 4
+   getattr -> 4
+   unique: 682, success, outsize: 144
+unique: 683, opcode: UNLINK (10), nodeid: 256, insize: 45, pid: 1147
+   unique: 683, success, outsize: 16
+unique: 684, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611911 1542611911 1542611911
+   unique: 684, success, outsize: 144
+unique: 685, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named x4-4under inode No.256
+isfile: 260 is a file
+getattr 0000000000000104 1
+isfile: 260 is a file
+getfile 0000000000000104
+getfile 0000000000000104 -> sz 4
+   getattr -> 4
+   unique: 685, success, outsize: 144
+unique: 686, opcode: UNLINK (10), nodeid: 256, insize: 45, pid: 1147
+   unique: 686, success, outsize: 16
+unique: 687, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611911 1542611911 1542611911
+   unique: 687, success, outsize: 144
+unique: 688, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named x3-0under inode No.256
+isfile: 261 is a file
+getattr 0000000000000105 1
+isfile: 261 is a file
+getfile 0000000000000105
+getfile 0000000000000105 -> sz 4
+   getattr -> 4
+   unique: 688, success, outsize: 144
+unique: 689, opcode: UNLINK (10), nodeid: 256, insize: 45, pid: 1147
+   unique: 689, success, outsize: 16
+unique: 690, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611912 1542611912 1542611912
+   unique: 690, success, outsize: 144
+unique: 691, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named x3-1under inode No.256
+isfile: 268 is a file
+getattr 000000000000010c 1
+isfile: 268 is a file
+getfile 000000000000010c
+getfile 000000000000010c -> sz 4
+   getattr -> 4
+   unique: 691, success, outsize: 144
+unique: 692, opcode: UNLINK (10), nodeid: 256, insize: 45, pid: 1147
+   unique: 692, success, outsize: 16
+unique: 693, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611912 1542611912 1542611912
+   unique: 693, success, outsize: 144
+unique: 694, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named x3-2under inode No.256
+isfile: 269 is a file
+getattr 000000000000010d 1
+isfile: 269 is a file
+getfile 000000000000010d
+getfile 000000000000010d -> sz 4
+   getattr -> 4
+   unique: 694, success, outsize: 144
+unique: 695, opcode: UNLINK (10), nodeid: 256, insize: 45, pid: 1147
+   unique: 695, success, outsize: 16
+unique: 696, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611912 1542611912 1542611912
+   unique: 696, success, outsize: 144
+unique: 697, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named x3-3under inode No.256
+isfile: 270 is a file
+getattr 000000000000010e 1
+isfile: 270 is a file
+getfile 000000000000010e
+getfile 000000000000010e -> sz 4
+   getattr -> 4
+   unique: 697, success, outsize: 144
+unique: 698, opcode: UNLINK (10), nodeid: 256, insize: 45, pid: 1147
+   unique: 698, success, outsize: 16
+unique: 699, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611912 1542611912 1542611912
+   unique: 699, success, outsize: 144
+unique: 700, opcode: LOOKUP (1), nodeid: 256, insize: 45, pid: 1147
+In lookup: searching file named x3-4under inode No.256
+isfile: 271 is a file
+getattr 000000000000010f 1
+isfile: 271 is a file
+getfile 000000000000010f
+getfile 000000000000010f -> sz 4
+   getattr -> 4
+   unique: 700, success, outsize: 144
+unique: 701, opcode: UNLINK (10), nodeid: 256, insize: 45, pid: 1147
+   unique: 701, success, outsize: 16
+unique: 702, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1153
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611919 1542611918 1542611919
+   unique: 702, success, outsize: 144
+unique: 703, opcode: LOOKUP (1), nodeid: 256, insize: 44, pid: 1153
+In lookup: searching file named wwwunder inode No.256
+isfile: 257 is a file
+getattr 0000000000000101 1
+isfile: 257 is a file
+getfile 0000000000000101
+getfile 0000000000000101 -> sz 65535
+   getattr -> 65535
+   unique: 703, success, outsize: 144
+unique: 704, opcode: OPEN (14), nodeid: 257, insize: 48, pid: 1153
+   unique: 704, success, outsize: 32
+unique: 705, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 705, success, outsize: 24
+unique: 706, opcode: FSYNC (20), nodeid: 257, insize: 56, pid: 1153
+   unique: 706, error: -38 (Function not implemented), outsize: 16
+unique: 707, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 707, success, outsize: 24
+unique: 708, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 708, success, outsize: 24
+unique: 709, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 709, success, outsize: 24
+unique: 710, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 710, success, outsize: 24
+unique: 711, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 711, success, outsize: 24
+unique: 712, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 712, success, outsize: 24
+unique: 713, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 713, success, outsize: 24
+unique: 714, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 714, success, outsize: 24
+unique: 715, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 715, success, outsize: 24
+unique: 716, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 716, success, outsize: 24
+unique: 717, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 717, success, outsize: 24
+unique: 718, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 718, success, outsize: 24
+unique: 719, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 719, success, outsize: 24
+unique: 720, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 720, success, outsize: 24
+unique: 721, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 721, success, outsize: 24
+unique: 722, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 722, success, outsize: 24
+unique: 723, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 723, success, outsize: 24
+unique: 724, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 724, success, outsize: 24
+unique: 725, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 725, success, outsize: 24
+unique: 726, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 726, success, outsize: 24
+unique: 727, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 727, success, outsize: 24
+unique: 728, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 728, success, outsize: 24
+unique: 729, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 729, success, outsize: 24
+unique: 730, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 730, success, outsize: 24
+unique: 731, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 731, success, outsize: 24
+unique: 732, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 732, success, outsize: 24
+unique: 733, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 733, success, outsize: 24
+unique: 734, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 734, success, outsize: 24
+unique: 735, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 735, success, outsize: 24
+unique: 736, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 736, success, outsize: 24
+unique: 737, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 737, success, outsize: 24
+unique: 738, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 738, success, outsize: 24
+unique: 739, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 739, success, outsize: 24
+unique: 740, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 740, success, outsize: 24
+unique: 741, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 741, success, outsize: 24
+unique: 742, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 742, success, outsize: 24
+unique: 743, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 743, success, outsize: 24
+unique: 744, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 744, success, outsize: 24
+unique: 745, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 745, success, outsize: 24
+unique: 746, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 746, success, outsize: 24
+unique: 747, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 747, success, outsize: 24
+unique: 748, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 748, success, outsize: 24
+unique: 749, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 749, success, outsize: 24
+unique: 750, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 750, success, outsize: 24
+unique: 751, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 751, success, outsize: 24
+unique: 752, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 752, success, outsize: 24
+unique: 753, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 753, success, outsize: 24
+unique: 754, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 754, success, outsize: 24
+unique: 755, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 755, success, outsize: 24
+unique: 756, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 756, success, outsize: 24
+unique: 757, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 757, success, outsize: 24
+unique: 758, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 758, success, outsize: 24
+unique: 759, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 759, success, outsize: 24
+unique: 760, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 760, success, outsize: 24
+unique: 761, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 761, success, outsize: 24
+unique: 762, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 762, success, outsize: 24
+unique: 763, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 763, success, outsize: 24
+unique: 764, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 764, success, outsize: 24
+unique: 765, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 765, success, outsize: 24
+unique: 766, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 766, success, outsize: 24
+unique: 767, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 767, success, outsize: 24
+unique: 768, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 768, success, outsize: 24
+unique: 769, opcode: WRITE (16), nodeid: 257, insize: 81, pid: 1153
+   unique: 769, success, outsize: 24
+unique: 770, opcode: RELEASE (18), nodeid: 257, insize: 64, pid: 0
+   unique: 770, success, outsize: 16
+unique: 771, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611920 1542611918 1542611920
+   unique: 771, success, outsize: 144
+unique: 772, opcode: LOOKUP (1), nodeid: 256, insize: 44, pid: 1147
+In lookup: searching file named wwwunder inode No.256
+isfile: 257 is a file
+getattr 0000000000000101 1
+isfile: 257 is a file
+getfile 0000000000000101
+getfile 0000000000000101 -> sz 65535
+   getattr -> 65535
+   unique: 772, success, outsize: 144
+unique: 773, opcode: OPEN (14), nodeid: 257, insize: 48, pid: 1147
+   unique: 773, success, outsize: 32
+unique: 774, opcode: READ (15), nodeid: 257, insize: 80, pid: 1147
+   unique: 774, success, outsize: 16400
+unique: 775, opcode: RELEASE (18), nodeid: 257, insize: 64, pid: 0
+   unique: 775, success, outsize: 16
+unique: 776, opcode: LOOKUP (1), nodeid: 1, insize: 46, pid: 1147
+In lookup: searching file named d1147under inode No.1
+isfile: 256 is not a file
+getattr 0000000000000100 0
+isfile: 256 is not a file
+isdir: 256 is a dir
+getdir 0000000000000100
+   getattr -> 1542611922 1542611918 1542611922
+   unique: 776, success, outsize: 144
+unique: 777, opcode: LOOKUP (1), nodeid: 256, insize: 44, pid: 1147
+In lookup: searching file named wwwunder inode No.256
+isfile: 257 is a file
+getattr 0000000000000101 1
+isfile: 257 is a file
+getfile 0000000000000101
+getfile 0000000000000101 -> sz 65535
+   getattr -> 65535
+   unique: 777, success, outsize: 144
+unique: 778, opcode: OPEN (14), nodeid: 257, insize: 48, pid: 1147
+   unique: 778, success, outsize: 32
+unique: 779, opcode: READ (15), nodeid: 257, insize: 80, pid: 1147
+   unique: 779, success, outsize: 4112
+unique: 780, opcode: RELEASE (18), nodeid: 257, insize: 64, pid: 0
+   unique: 780, success, outsize: 16
+unique: 781, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1171
+In lookup: searching file named db1171under inode No.1
+In lookup: lookup failed!
+   unique: 781, error: -2 (No such file or directory), outsize: 16
+unique: 782, opcode: MKDIR (9), nodeid: 1, insize: 55, pid: 1171
+In mkdir: creating directory named db1171under inode No.1
+In lookup: searching file named db1171under inode No.1
+In lookup: lookup failed!
+In mkdir: directory named db1171 created with inode No.259
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611923 1542611923 1542611923
+   unique: 782, success, outsize: 144
+unique: 783, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1171
+In lookup: searching file named da1171under inode No.1
+isfile: 258 is not a file
+getattr 0000000000000102 0
+isfile: 258 is not a file
+isdir: 258 is a dir
+getdir 0000000000000102
+   getattr -> 1542611923 1542611923 1542611923
+   unique: 783, success, outsize: 144
+unique: 784, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1173
+In lookup: searching file named db1171under inode No.1
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611923 1542611923 1542611923
+   unique: 784, success, outsize: 144
+unique: 785, opcode: LOOKUP (1), nodeid: 259, insize: 45, pid: 1173
+In lookup: searching file named xx-0under inode No.259
+In lookup: lookup failed!
+   unique: 785, error: -2 (No such file or directory), outsize: 16
+unique: 786, opcode: CREATE (35), nodeid: 259, insize: 61, pid: 1173
+In create: creating file named xx-0under inode No.259
+In lookup: searching file named xx-0under inode No.259
+In lookup: lookup failed!
+In create: file named xx-0created with inode No.261
+isfile: 261 is a file
+getattr 0000000000000105 1
+isfile: 261 is a file
+getfile 0000000000000105
+getfile 0000000000000105 -> sz 0
+   getattr -> 0
+   unique: 786, success, outsize: 160
+OK: create returns.
+unique: 787, opcode: WRITE (16), nodeid: 261, insize: 84, pid: 1173
+   unique: 787, success, outsize: 24
+unique: 788, opcode: RELEASE (18), nodeid: 261, insize: 64, pid: 0
+   unique: 788, success, outsize: 16
+unique: 789, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1173
+In lookup: searching file named db1171under inode No.1
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611924 1542611924 1542611924
+   unique: 789, success, outsize: 144
+unique: 790, opcode: LOOKUP (1), nodeid: 259, insize: 45, pid: 1173
+In lookup: searching file named xx-1under inode No.259
+In lookup: lookup failed!
+   unique: 790, error: -2 (No such file or directory), outsize: 16
+unique: 791, opcode: CREATE (35), nodeid: 259, insize: 61, pid: 1173
+In create: creating file named xx-1under inode No.259
+In lookup: searching file named xx-1under inode No.259
+In lookup: lookup failed!
+In create: file named xx-1created with inode No.263
+isfile: 263 is a file
+getattr 0000000000000107 1
+isfile: 263 is a file
+getfile 0000000000000107
+getfile 0000000000000107 -> sz 0
+   getattr -> 0
+   unique: 791, success, outsize: 160
+OK: create returns.
+unique: 792, opcode: WRITE (16), nodeid: 263, insize: 84, pid: 1173
+   unique: 792, success, outsize: 24
+unique: 793, opcode: RELEASE (18), nodeid: 263, insize: 64, pid: 0
+   unique: 793, success, outsize: 16
+unique: 794, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1173
+In lookup: searching file named db1171under inode No.1
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611924 1542611924 1542611924
+   unique: 794, success, outsize: 144
+unique: 795, opcode: LOOKUP (1), nodeid: 259, insize: 45, pid: 1173
+In lookup: searching file named xx-2under inode No.259
+In lookup: lookup failed!
+   unique: 795, error: -2 (No such file or directory), outsize: 16
+unique: 796, opcode: CREATE (35), nodeid: 259, insize: 61, pid: 1173
+In create: creating file named xx-2under inode No.259
+In lookup: searching file named xx-2under inode No.259
+In lookup: lookup failed!
+In create: file named xx-2created with inode No.265
+isfile: 265 is a file
+getattr 0000000000000109 1
+isfile: 265 is a file
+getfile 0000000000000109
+getfile 0000000000000109 -> sz 0
+   getattr -> 0
+   unique: 796, success, outsize: 160
+OK: create returns.
+unique: 797, opcode: WRITE (16), nodeid: 265, insize: 84, pid: 1173
+   unique: 797, success, outsize: 24
+unique: 798, opcode: RELEASE (18), nodeid: 265, insize: 64, pid: 0
+   unique: 798, success, outsize: 16
+unique: 799, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1173
+In lookup: searching file named db1171under inode No.1
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611924 1542611924 1542611924
+   unique: 799, success, outsize: 144
+unique: 800, opcode: LOOKUP (1), nodeid: 259, insize: 45, pid: 1173
+In lookup: searching file named xx-3under inode No.259
+In lookup: lookup failed!
+   unique: 800, error: -2 (No such file or directory), outsize: 16
+unique: 801, opcode: CREATE (35), nodeid: 259, insize: 61, pid: 1173
+In create: creating file named xx-3under inode No.259
+In lookup: searching file named xx-3under inode No.259
+In lookup: lookup failed!
+In create: file named xx-3created with inode No.267
+isfile: 267 is a file
+getattr 000000000000010b 1
+isfile: 267 is a file
+getfile 000000000000010b
+getfile 000000000000010b -> sz 0
+   getattr -> 0
+   unique: 801, success, outsize: 160
+OK: create returns.
+unique: 802, opcode: WRITE (16), nodeid: 267, insize: 84, pid: 1173
+   unique: 802, success, outsize: 24
+unique: 803, opcode: RELEASE (18), nodeid: 267, insize: 64, pid: 0
+   unique: 803, success, outsize: 16
+unique: 804, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1173
+In lookup: searching file named db1171under inode No.1
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611924 1542611924 1542611924
+   unique: 804, success, outsize: 144
+unique: 805, opcode: LOOKUP (1), nodeid: 259, insize: 45, pid: 1173
+In lookup: searching file named xx-4under inode No.259
+In lookup: lookup failed!
+   unique: 805, error: -2 (No such file or directory), outsize: 16
+unique: 806, opcode: CREATE (35), nodeid: 259, insize: 61, pid: 1173
+In create: creating file named xx-4under inode No.259
+In lookup: searching file named xx-4under inode No.259
+In lookup: lookup failed!
+In create: file named xx-4created with inode No.269
+isfile: 269 is a file
+getattr 000000000000010d 1
+isfile: 269 is a file
+getfile 000000000000010d
+getfile 000000000000010d -> sz 0
+   getattr -> 0
+   unique: 806, success, outsize: 160
+OK: create returns.
+unique: 807, opcode: WRITE (16), nodeid: 269, insize: 84, pid: 1173
+   unique: 807, success, outsize: 24
+unique: 808, opcode: RELEASE (18), nodeid: 269, insize: 64, pid: 0
+   unique: 808, success, outsize: 16
+unique: 809, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1173
+In lookup: searching file named db1171under inode No.1
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611924 1542611924 1542611924
+   unique: 809, success, outsize: 144
+unique: 810, opcode: LOOKUP (1), nodeid: 259, insize: 45, pid: 1173
+In lookup: searching file named xx-5under inode No.259
+In lookup: lookup failed!
+   unique: 810, error: -2 (No such file or directory), outsize: 16
+unique: 811, opcode: CREATE (35), nodeid: 259, insize: 61, pid: 1173
+In create: creating file named xx-5under inode No.259
+In lookup: searching file named xx-5under inode No.259
+In lookup: lookup failed!
+In create: file named xx-5created with inode No.271
+isfile: 271 is a file
+getattr 000000000000010f 1
+isfile: 271 is a file
+getfile 000000000000010f
+getfile 000000000000010f -> sz 0
+   getattr -> 0
+   unique: 811, success, outsize: 160
+OK: create returns.
+unique: 812, opcode: WRITE (16), nodeid: 271, insize: 84, pid: 1173
+   unique: 812, success, outsize: 24
+unique: 813, opcode: RELEASE (18), nodeid: 271, insize: 64, pid: 0
+   unique: 813, success, outsize: 16
+unique: 814, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1173
+In lookup: searching file named db1171under inode No.1
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611924 1542611924 1542611924
+   unique: 814, success, outsize: 144
+unique: 815, opcode: LOOKUP (1), nodeid: 259, insize: 45, pid: 1173
+In lookup: searching file named xx-6under inode No.259
+In lookup: lookup failed!
+   unique: 815, error: -2 (No such file or directory), outsize: 16
+unique: 816, opcode: CREATE (35), nodeid: 259, insize: 61, pid: 1173
+In create: creating file named xx-6under inode No.259
+In lookup: searching file named xx-6under inode No.259
+In lookup: lookup failed!
+In create: file named xx-6created with inode No.273
+isfile: 273 is a file
+getattr 0000000000000111 1
+isfile: 273 is a file
+getfile 0000000000000111
+getfile 0000000000000111 -> sz 0
+   getattr -> 0
+   unique: 816, success, outsize: 160
+OK: create returns.
+unique: 817, opcode: WRITE (16), nodeid: 273, insize: 84, pid: 1173
+   unique: 817, success, outsize: 24
+unique: 818, opcode: RELEASE (18), nodeid: 273, insize: 64, pid: 0
+   unique: 818, success, outsize: 16
+unique: 819, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1173
+In lookup: searching file named db1171under inode No.1
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611924 1542611924 1542611924
+   unique: 819, success, outsize: 144
+unique: 820, opcode: LOOKUP (1), nodeid: 259, insize: 45, pid: 1173
+In lookup: searching file named xx-7under inode No.259
+In lookup: lookup failed!
+   unique: 820, error: -2 (No such file or directory), outsize: 16
+unique: 821, opcode: CREATE (35), nodeid: 259, insize: 61, pid: 1173
+In create: creating file named xx-7under inode No.259
+In lookup: searching file named xx-7under inode No.259
+In lookup: lookup failed!
+In create: file named xx-7created with inode No.275
+isfile: 275 is a file
+getattr 0000000000000113 1
+isfile: 275 is a file
+getfile 0000000000000113
+getfile 0000000000000113 -> sz 0
+   getattr -> 0
+   unique: 821, success, outsize: 160
+OK: create returns.
+unique: 822, opcode: WRITE (16), nodeid: 275, insize: 84, pid: 1173
+   unique: 822, success, outsize: 24
+unique: 823, opcode: RELEASE (18), nodeid: 275, insize: 64, pid: 0
+   unique: 823, success, outsize: 16
+unique: 824, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1173
+In lookup: searching file named db1171under inode No.1
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611924 1542611924 1542611924
+   unique: 824, success, outsize: 144
+unique: 825, opcode: LOOKUP (1), nodeid: 259, insize: 45, pid: 1173
+In lookup: searching file named xx-8under inode No.259
+In lookup: lookup failed!
+   unique: 825, error: -2 (No such file or directory), outsize: 16
+unique: 826, opcode: CREATE (35), nodeid: 259, insize: 61, pid: 1173
+In create: creating file named xx-8under inode No.259
+In lookup: searching file named xx-8under inode No.259
+In lookup: lookup failed!
+In create: file named xx-8created with inode No.277
+isfile: 277 is a file
+getattr 0000000000000115 1
+isfile: 277 is a file
+getfile 0000000000000115
+getfile 0000000000000115 -> sz 0
+   getattr -> 0
+   unique: 826, success, outsize: 160
+OK: create returns.
+unique: 827, opcode: WRITE (16), nodeid: 277, insize: 84, pid: 1173
+   unique: 827, success, outsize: 24
+unique: 828, opcode: RELEASE (18), nodeid: 277, insize: 64, pid: 0
+   unique: 828, success, outsize: 16
+unique: 829, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1173
+In lookup: searching file named db1171under inode No.1
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611924 1542611924 1542611924
+   unique: 829, success, outsize: 144
+unique: 830, opcode: LOOKUP (1), nodeid: 259, insize: 45, pid: 1173
+In lookup: searching file named xx-9under inode No.259
+In lookup: lookup failed!
+   unique: 830, error: -2 (No such file or directory), outsize: 16
+unique: 831, opcode: CREATE (35), nodeid: 259, insize: 61, pid: 1173
+In create: creating file named xx-9under inode No.259
+In lookup: searching file named xx-9under inode No.259
+In lookup: lookup failed!
+In create: file named xx-9created with inode No.279
+isfile: 279 is a file
+getattr 0000000000000117 1
+isfile: 279 is a file
+getfile 0000000000000117
+getfile 0000000000000117 -> sz 0
+   getattr -> 0
+   unique: 831, success, outsize: 160
+OK: create returns.
+unique: 832, opcode: WRITE (16), nodeid: 279, insize: 84, pid: 1173
+   unique: 832, success, outsize: 24
+unique: 833, opcode: RELEASE (18), nodeid: 279, insize: 64, pid: 0
+   unique: 833, success, outsize: 16
+unique: 834, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1173
+In lookup: searching file named db1171under inode No.1
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611924 1542611924 1542611924
+   unique: 834, success, outsize: 144
+unique: 835, opcode: LOOKUP (1), nodeid: 259, insize: 45, pid: 1173
+In lookup: searching file named xx-0under inode No.259
+isfile: 261 is a file
+getattr 0000000000000105 1
+isfile: 261 is a file
+getfile 0000000000000105
+getfile 0000000000000105 -> sz 4
+   getattr -> 4
+   unique: 835, success, outsize: 144
+unique: 836, opcode: UNLINK (10), nodeid: 259, insize: 45, pid: 1173
+   unique: 836, success, outsize: 16
+unique: 837, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1173
+In lookup: searching file named db1171under inode No.1
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611925 1542611925 1542611925
+   unique: 837, success, outsize: 144
+unique: 838, opcode: LOOKUP (1), nodeid: 259, insize: 45, pid: 1173
+In lookup: searching file named xx-1under inode No.259
+isfile: 263 is a file
+getattr 0000000000000107 1
+isfile: 263 is a file
+getfile 0000000000000107
+getfile 0000000000000107 -> sz 4
+   getattr -> 4
+   unique: 838, success, outsize: 144
+unique: 839, opcode: UNLINK (10), nodeid: 259, insize: 45, pid: 1173
+   unique: 839, success, outsize: 16
+unique: 840, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1173
+In lookup: searching file named db1171under inode No.1
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611925 1542611925 1542611925
+   unique: 840, success, outsize: 144
+unique: 841, opcode: LOOKUP (1), nodeid: 259, insize: 45, pid: 1173
+In lookup: searching file named xx-2under inode No.259
+isfile: 265 is a file
+getattr 0000000000000109 1
+isfile: 265 is a file
+getfile 0000000000000109
+getfile 0000000000000109 -> sz 4
+   getattr -> 4
+   unique: 841, success, outsize: 144
+unique: 842, opcode: UNLINK (10), nodeid: 259, insize: 45, pid: 1173
+   unique: 842, success, outsize: 16
+unique: 843, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1173
+In lookup: searching file named db1171under inode No.1
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611925 1542611925 1542611925
+   unique: 843, success, outsize: 144
+unique: 844, opcode: LOOKUP (1), nodeid: 259, insize: 45, pid: 1173
+In lookup: searching file named xx-3under inode No.259
+isfile: 267 is a file
+getattr 000000000000010b 1
+isfile: 267 is a file
+getfile 000000000000010b
+getfile 000000000000010b -> sz 4
+   getattr -> 4
+   unique: 844, success, outsize: 144
+unique: 845, opcode: UNLINK (10), nodeid: 259, insize: 45, pid: 1173
+   unique: 845, success, outsize: 16
+unique: 846, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1173
+In lookup: searching file named db1171under inode No.1
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611925 1542611925 1542611925
+   unique: 846, success, outsize: 144
+unique: 847, opcode: LOOKUP (1), nodeid: 259, insize: 45, pid: 1173
+In lookup: searching file named xx-4under inode No.259
+isfile: 269 is a file
+getattr 000000000000010d 1
+isfile: 269 is a file
+getfile 000000000000010d
+getfile 000000000000010d -> sz 4
+   getattr -> 4
+   unique: 847, success, outsize: 144
+unique: 848, opcode: UNLINK (10), nodeid: 259, insize: 45, pid: 1173
+   unique: 848, success, outsize: 16
+unique: 849, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1173
+In lookup: searching file named db1171under inode No.1
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611925 1542611925 1542611925
+   unique: 849, success, outsize: 144
+unique: 850, opcode: LOOKUP (1), nodeid: 259, insize: 45, pid: 1173
+In lookup: searching file named xx-5under inode No.259
+isfile: 271 is a file
+getattr 000000000000010f 1
+isfile: 271 is a file
+getfile 000000000000010f
+getfile 000000000000010f -> sz 4
+   getattr -> 4
+   unique: 850, success, outsize: 144
+unique: 851, opcode: UNLINK (10), nodeid: 259, insize: 45, pid: 1173
+   unique: 851, success, outsize: 16
+unique: 852, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1173
+In lookup: searching file named db1171under inode No.1
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611925 1542611925 1542611925
+   unique: 852, success, outsize: 144
+unique: 853, opcode: LOOKUP (1), nodeid: 259, insize: 45, pid: 1173
+In lookup: searching file named xx-6under inode No.259
+isfile: 273 is a file
+getattr 0000000000000111 1
+isfile: 273 is a file
+getfile 0000000000000111
+getfile 0000000000000111 -> sz 4
+   getattr -> 4
+   unique: 853, success, outsize: 144
+unique: 854, opcode: UNLINK (10), nodeid: 259, insize: 45, pid: 1173
+   unique: 854, success, outsize: 16
+unique: 855, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1173
+In lookup: searching file named db1171under inode No.1
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611925 1542611925 1542611925
+   unique: 855, success, outsize: 144
+unique: 856, opcode: LOOKUP (1), nodeid: 259, insize: 45, pid: 1173
+In lookup: searching file named xx-7under inode No.259
+isfile: 275 is a file
+getattr 0000000000000113 1
+isfile: 275 is a file
+getfile 0000000000000113
+getfile 0000000000000113 -> sz 4
+   getattr -> 4
+   unique: 856, success, outsize: 144
+unique: 857, opcode: UNLINK (10), nodeid: 259, insize: 45, pid: 1173
+   unique: 857, success, outsize: 16
+unique: 858, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1173
+In lookup: searching file named db1171under inode No.1
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611925 1542611925 1542611925
+   unique: 858, success, outsize: 144
+unique: 859, opcode: LOOKUP (1), nodeid: 259, insize: 45, pid: 1173
+In lookup: searching file named xx-8under inode No.259
+isfile: 277 is a file
+getattr 0000000000000115 1
+isfile: 277 is a file
+getfile 0000000000000115
+getfile 0000000000000115 -> sz 4
+   getattr -> 4
+   unique: 859, success, outsize: 144
+unique: 860, opcode: UNLINK (10), nodeid: 259, insize: 45, pid: 1173
+   unique: 860, success, outsize: 16
+unique: 861, opcode: FORGET (2), nodeid: 277, insize: 48, pid: 0
+unique: 862, opcode: LOOKUP (1), nodeid: 1, insize: 47, pid: 1171
+In lookup: searching file named db1171under inode No.1
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611925 1542611925 1542611925
+   unique: 862, success, outsize: 144
+unique: 863, opcode: OPENDIR (27), nodeid: 259, insize: 48, pid: 1171
+   unique: 863, success, outsize: 32
+unique: 864, opcode: GETATTR (3), nodeid: 259, insize: 56, pid: 1171
+isfile: 259 is not a file
+getattr 0000000000000103 0
+isfile: 259 is not a file
+isdir: 259 is a dir
+getdir 0000000000000103
+   getattr -> 1542611925 1542611925 1542611925
+   unique: 864, success, outsize: 120
+unique: 865, opcode: READDIR (28), nodeid: 259, insize: 80, pid: 1171
+fuseserver_readdir
+isdir: 259 is a dir
+   unique: 865, success, outsize: 48
+unique: 866, opcode: READDIR (28), nodeid: 259, insize: 80, pid: 1171
+fuseserver_readdir
+isdir: 259 is a dir
+   unique: 866, success, outsize: 16
+unique: 867, opcode: RELEASEDIR (29), nodeid: 259, insize: 64, pid: 0
+   unique: 867, success, outsize: 16
+unique: 868, opcode: BATCH_FORGET (42), nodeid: 0, insize: 288, pid: 0
+fuse: failed to unmount /home/stu/devlop/yfs2: Invalid argument

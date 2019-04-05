@@ -1,0 +1,4 @@
+ps | sort
+grep ^a -c /usr/dict/words
+ls -ls -r | grep .conf | head -n 5
+echo echo "hello world!" >> echo.sh
