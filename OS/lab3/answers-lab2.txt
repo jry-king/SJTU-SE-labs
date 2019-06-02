@@ -1,0 +1,55 @@
+Physical Page Management
+
+Exercise 1. 
+boot_alloc(): First detect whether n is 0 and return the next available page if so. Then calculate the space needed and move nextfree pointer by that number, while it will panic in macro KADDR if out of memory, and finally return the pointer to that allocated memory without initialization.
+mem_init(): 
+Only two lines of physical page allocation code here. First use boot_alloc() to set up a series of PageInfo, then use memset() to initialize them according to the instruction.
+page_init(): set different cases separately.
+Case 1 only contains 1 page.
+Case 2 sets the base memory free except for pages[0].
+Case 3 sets the IO hole allocated and by the way sets memory between case 2 and 3 free.
+Case 4 uses boot_alloc() to find the boundary and set the rest pages accordingly.
+page_alloc(): real physical memory allocator, returns NULL if out of memory. Get a free page and set it to 0 if necessary. Then remove it from free list for checking double-free bugs.
+page_free(): panic if there is something wrong with the page, then add it to the free list.
+
+Question 1. uintptr_t, since c program codes are all in protected mode and only use virtual address.
+
+Virtual Memory
+
+Exercise 4. 
+pgdir_walk(): Return a pointer to the pte of va in pgdir. Firstly, tries to get the pde. If the pde does not exist, return NULL if not instructed to create a new page, or create a new page for the page table and add it to page directory table. Then get the page table¡¯s address and find the pte by the index in va. The pte pointed to may contain a valid address to a page, or 0 if the page does not exist.
+boot_map_region(): static mapping function, needn¡¯t to check arguments since their legality is guaranteed. Just find pte and fill it with corresponding page¡¯s physical address until the whole region is mapped.
+boot_map_region_large(): hugepage version of boot_map_region().
+page_lookup(): tries to find the page containing va, and returns NULL if no such page (do not allocate since it just perform search). Then store the pte found if instructed, and return the corresponding PageInfo if the pte is valid.
+page_remove(): use page_lookup() to find the pte of the page, and do nothing if no page there. page_decref() decrease reference count and possible free.
+page_insert(): tries to find the page containing va or allocate one if no such a page, and return -E_NO_MEM if allocation fails. Then just add page reference of the new page, remove the existing old page if found (including TLB invalidation), and insert the new page in the pte. This solution can obviously deal with old pages. Since pte is 0 if empty or PTE_P bit must be set, it can identify old pages from new ones by checking PTE_P bit. Empty pte can also correctly receive the new page. As for the corner case, since pp_ref++ and assignment to *pte can fully negate page_remove(), extra code is not needed.
+
+Kernel Address Space
+
+Exercise 5. Use boot_map_region() to map physical pages to linear address UPAGES, which is read-only to users, and bootstack to kernel stack. Use boot_map_region_large() to map all physical memory to KERNBASE, which is used along with cr4 to enable large pages.
+
+Question 2.
+
+Entry 	Base virtual address	Points to (logically)
+960-1023	0xf0000000-0xffc00000	Page table for remapped whole physical memory
+958		0xef800000			Page table for kernel stack and guard page
+957		0xef400000			Current page table (pdt)
+956		0xef000000			Page table for struct PageInfo
+
+Question 3. Because every entry in page table or page directory table has a permission bit, in our JOS shown as PTE_U. If this bit is not set, then user cannot access this part of memory.
+
+Question 4. 256MB. Because this operating system needs to map all physical memory it supports to address space above KERNBASE to manipulate them, which only contains 256 MB space.
+
+Question 5. 5124KB in total.
+Breakdown: page directory table (1 page, 4KB) + page tables (1K pages, 4MB) + physical page info (ROUNDUP(npages*sizeof(struct PageInfo), PGSIZE) = 1MB)
+
+Question 6.
+Here in entry.S we transfer to running at an EIP above KERNBASE:
+mov	$relocated, %eax
+jmp	*%eax
+
+In entrypgdir.c, we map physical address to both virtual addresses [KERNBASE, KERNBASE+4MB) and [0, 4MB) by the assignment "__attribute__((__aligned__(PGSIZE))) pde_t entry_pgdir[NPDENTRIES] = ...". This enables us to execute at low EIP even between the start of paging and entering higher EIP. Kernel refers to virtual address after paging is enabled, but since the virtual address [0, 4MB) is mapped to same physical address, kernel can still use those address like using those physical address before.
+This transition is aimed at putting kernel at high address and reserving lower address for users.
+
+Challenge
+Solved challenge 2 by extending the JOS kernel with three commands: showmappings, setperm and dump.

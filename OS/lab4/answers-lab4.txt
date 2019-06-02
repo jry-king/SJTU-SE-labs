@@ -1,0 +1,19 @@
+Part A: Multiprocessor Support and Cooperative Multitasking
+
+Question 1. Compare kern/mpentry.S side by side with boot/boot.S. Bearing in mind that kern/mpentry.S is compiled and linked to run above KERNBASE just like everything else in the kernel, what is the purpose of macro MPBOOTPHYS? Why is it necessary in kern/mpentry.S but not in boot/boot.S? In other words, what could go wrong if it were omitted in kern/mpentry.S?
+Hint: recall the differences between the link address and the load address that we have discussed in Lab 1.
+
+Here MPBOOTPHYS is used to calculate the physical address of symbols, and we don't use virtual memory since although OS is already in protected mode, the page table of the application processor hasn't been turned on yet.
+
+Question 2. It seems that using the big kernel lock guarantees that only one CPU can run the kernel code at a time. Why do we still need separate kernel stacks for each CPU? Describe a scenario in which using a shared kernel stack will go wrong, even with the protection of the big kernel lock.
+
+Suppose a CPU called CPU0 holds the kernel lock and is using the shared kernel stack in kernel mode. If just at this moment another CPU called CPU1 receives an interrupt, then CPU1 will push arguments of its trapframe like value in registers onto the shared kernel stack, which may harm the integrity of CPU0's data on the stack.
+
+Question 3. In your implementation of env_run() you should have called lcr3(). Before and after the call to lcr3(), your code makes references (at least it should) to the variable e, the argument to env_run. Upon loading the %cr3 register, the addressing context used by the MMU is instantly changed. But a virtual address (namely e) has meaning relative to a given address context--the address context specifies the physical address to which the virtual address maps. Why can the pointer e be dereferenced both before and after the addressing switch?
+
+Because the environment structure pointer e is stored in kernel and its value lies in the range of kernel address, which should be the same in all those page tables of those environments. After context switch e is still mapped to the same place so it can be directly dereferenced.
+
+Question 4. Whenever the kernel switches from one environment to another, it must ensure the old environment's registers are saved so they can be restored properly later. Why? Where does this happen?
+
+Because those registers contains crucial information of the environment and the environment need them to continue running.
+Those registers are saved in env_tf, the trapframe of the environment. The trapframe of the old environment is pushed onto its kernel stack in context switch before calling trap (in kern/trapentry.S). The trapframe of the new environment is poped out from its kernel stack in env_pop_tf() when it starts running in env_run() (in kern/env.c).

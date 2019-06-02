@@ -1,0 +1,13 @@
+Part A: User Environments and Exception Handling
+
+Question 1. Different exceptions/interrupts need different actions to be dealt with, and one single handler can only perform one single action, so it cannot distinguish different exceptions/interrupts and solve them correctly.
+
+Question 2. No. Softint is a user program and is executed in user mode, where page fault (interrupt 14, whose descriptor privilege level is 0) is not allowed to be produced. Once kernel detects page fault produced by user program it will generate a general protection fault (interrupt 13), indicating user program violates protection rules. If page fault is allowed in user mode then the user environment might be destroyed by wrong page swap.
+
+Part B: Page Faults, Breakpoints Exceptions, and System Calls
+
+The Breakpoint Exception
+
+Question 3. If the descriptor privilege level of the break point entry is initialized to 3 then the test case will generate a breakpoint exception, while a general protection fault if 0 since that means breakpoint exception can only be generated in kernel mode.
+
+Question 4. By using differrent privilege levels, kernel limit user's ability to generate interrupts, which prevents malicious or buggy user programs from damaging the environments or even kernel itself and help OS become more robust.
